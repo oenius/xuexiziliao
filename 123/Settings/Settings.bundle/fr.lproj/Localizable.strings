@@ -1,0 +1,66 @@
+
+/* 通用 */
+"General" = "Général";
+
+/* 邮件发送成功 */
+"email.send email successful" = "Email envoyé avec succès";
+
+/* 邮件发送失败 */
+"email.send email failed" = "Echec lors de l'envoi de l'email";
+
+/* 确定 */
+"Sure" = "OK";
+
+/* 升级到专业版 */
+"Upgrade to Pro Version" = "Mettre à jour pour la version Pro";
+
+/* 意见反馈 */
+"Suggections" = "Feedback";
+
+/* 操作成功 */
+"common.Operating Successed" = "Opération réussie";
+
+/* 设置 */
+"user.Settings" = "Réglages";
+
+/* 移除广告 */
+"Remove Ads" = "Supprimer les pubs";
+
+/* 给我们评分 */
+"setting.comment" = "Évaluez nous";
+
+/* 失败 */
+"task.fail" = "Échec";
+
+/* 失败 */
+"task.fail" = "Échec";
+
+/* 无法发送邮件，您需要激活邮件服务！ */
+"sendPhoto.System messages was unable to send the email.Please esnure that the email account is valid." = "Impossible d'envoyer un email, vous devez activer le service mail.";
+
+/* More Apps*/
+"More Apps" = "Plus d'Applis";
+
+"Payment prompt message" = "Si vous aimez utiliser %@, Obtenez la version sans publicité pour une meilleure expérience";
+
+/* 评论即可解锁。 */
+"massage,rate to unlock the function." = "Notez sur l'Appstore afin de déverrouiller cette fonction ?";
+
+/* 评论 */
+"common.comment" = "Commentaires";
+
+/* 广告 */
+"ads" = "Pubs";
+
+"Watch the video for a better experience" = "Visionnez la vidéo pour une meilleure expérience";
+
+"Watch a video to support us" = "Visionnez une vidéo pour nous soutenir";
+
+"Watch a video to unlock" = "Regarder une vidéo pour déverrouiller";
+
+/* 请去评分支持我们，即可流畅的使用功能。感谢您的支持！ */
+"Please rate to support us, you can smooth the use of function. thank you for your support!" = "Veuillez nous laisser une évaluation pour bénéficier d'un fonctionnement plus fluide. Merci de votre soutien";
+
+
+/* 网络连接失败，请开启无线数据 */
+"Network connection failed, please turn on wireless data" = "La connexion réseau a échoué, s'il vous plaît activer les données sans fil";

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompressViewController" customModule="VideoCompress" customModuleProvider="target">
+            <connections>
+                <outlet property="HDBtn" destination="ENZ-iW-DWs" id="B64-Be-X2W"/>
+                <outlet property="bitSlider" destination="kJ0-f6-Bl5" id="3uT-4h-62J"/>
+                <outlet property="bottomConstraint" destination="kC1-Jr-ynX" id="FwH-Yc-MTM"/>
+                <outlet property="compressBtn" destination="he0-Z9-Ksc" id="quP-Mx-5SX"/>
+                <outlet property="settingContentView" destination="sYq-Rl-Z2Y" id="Nge-D9-nUR"/>
+                <outlet property="tableView" destination="LeY-OQ-3CZ" id="mOj-bp-JxV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LeY-OQ-3CZ">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgt-ZL-Z9v">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYq-Rl-Z2Y">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he0-Z9-Ksc">
+                                    <color key="backgroundColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="压缩">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="compressBtnClick:" destination="-1" eventType="touchUpInside" id="cBt-wi-CNz"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ0-f6-Bl5" customClass="HSSlider" customModule="VideoCompress" customModuleProvider="target">
+                                    <color key="backgroundColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="ctl-pf-dEB"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="he0-Z9-Ksc" secondAttribute="trailing" constant="10" id="BZX-tl-4ZH"/>
+                                <constraint firstItem="he0-Z9-Ksc" firstAttribute="leading" secondItem="sYq-Rl-Z2Y" secondAttribute="leading" constant="10" id="HLR-kd-xsy"/>
+                                <constraint firstAttribute="bottom" secondItem="he0-Z9-Ksc" secondAttribute="bottom" constant="10" id="KVW-0m-LF7"/>
+                                <constraint firstItem="kJ0-f6-Bl5" firstAttribute="top" secondItem="sYq-Rl-Z2Y" secondAttribute="top" constant="10" id="LbZ-I0-v3w"/>
+                                <constraint firstItem="he0-Z9-Ksc" firstAttribute="top" secondItem="kJ0-f6-Bl5" secondAttribute="bottom" id="QEO-sc-d5t"/>
+                                <constraint firstItem="kJ0-f6-Bl5" firstAttribute="width" secondItem="sYq-Rl-Z2Y" secondAttribute="width" id="nTn-G8-qf0"/>
+                                <constraint firstItem="he0-Z9-Ksc" firstAttribute="height" secondItem="sYq-Rl-Z2Y" secondAttribute="height" multiplier="0.4" id="qcU-zz-PC6"/>
+                                <constraint firstAttribute="trailing" secondItem="kJ0-f6-Bl5" secondAttribute="trailing" id="uvu-vr-faS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sYq-Rl-Z2Y" firstAttribute="leading" secondItem="vgt-ZL-Z9v" secondAttribute="leading" constant="10" id="800-UL-c0D"/>
+                        <constraint firstItem="sYq-Rl-Z2Y" firstAttribute="centerY" secondItem="vgt-ZL-Z9v" secondAttribute="centerY" id="FES-Up-oJa"/>
+                        <constraint firstAttribute="trailing" secondItem="sYq-Rl-Z2Y" secondAttribute="trailing" constant="10" id="oRm-Aj-UZW"/>
+                        <constraint firstItem="sYq-Rl-Z2Y" firstAttribute="height" secondItem="vgt-ZL-Z9v" secondAttribute="height" id="uWa-Z8-skq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENZ-iW-DWs">
+                    <color key="backgroundColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="HD">
+                        <color key="titleColor" red="1" green="0.16356952806290306" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="HDChooseBtnClick:" destination="-1" eventType="touchUpInside" id="4F0-Fd-DtG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LeY-OQ-3CZ" secondAttribute="trailing" id="2UE-zU-G1S"/>
+                <constraint firstItem="ENZ-iW-DWs" firstAttribute="height" secondItem="he0-Z9-Ksc" secondAttribute="height" id="DZZ-f7-vYp"/>
+                <constraint firstItem="vgt-ZL-Z9v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hg6-f9-1dI"/>
+                <constraint firstItem="vgt-ZL-Z9v" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.16" id="L7Q-y9-4g6"/>
+                <constraint firstItem="vgt-ZL-Z9v" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" constant="-20" id="MxW-qb-CCA"/>
+                <constraint firstItem="ENZ-iW-DWs" firstAttribute="width" secondItem="he0-Z9-Ksc" secondAttribute="width" multiplier="0.42" id="QHn-Xf-vYd"/>
+                <constraint firstItem="vgt-ZL-Z9v" firstAttribute="top" secondItem="ENZ-iW-DWs" secondAttribute="bottom" constant="5" id="S1v-sW-TbH"/>
+                <constraint firstItem="LeY-OQ-3CZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b9a-Gt-8EV"/>
+                <constraint firstItem="LeY-OQ-3CZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eb2-6j-9z7"/>
+                <constraint firstItem="ENZ-iW-DWs" firstAttribute="top" secondItem="LeY-OQ-3CZ" secondAttribute="bottom" constant="10" id="fVi-rI-I9f"/>
+                <constraint firstAttribute="bottom" secondItem="vgt-ZL-Z9v" secondAttribute="bottom" constant="10" id="kC1-Jr-ynX"/>
+                <constraint firstItem="ENZ-iW-DWs" firstAttribute="leading" secondItem="kJ0-f6-Bl5" secondAttribute="leading" id="l7V-Nu-VS5"/>
+            </constraints>
+            <point key="canvasLocation" x="-1229" y="-842"/>
+        </view>
+    </objects>
+</document>

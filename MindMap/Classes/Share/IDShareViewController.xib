@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDShareViewController">
+            <connections>
+                <outlet property="btnContentView" destination="uWF-tq-NTF" id="3Ar-g1-uhf"/>
+                <outlet property="imageView" destination="89n-TY-AbD" id="eDk-Tn-Qp4"/>
+                <outlet property="saveBtn" destination="b2O-b5-u9e" id="Hup-W1-pJU"/>
+                <outlet property="shareBtn" destination="9KI-M0-5IM" id="U0G-Ks-Adj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWF-tq-NTF">
+                    <rect key="frame" x="0.0" y="507" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2O-b5-u9e">
+                            <rect key="frame" x="64" y="10" width="60" height="60"/>
+                            <state key="normal" image="baocun"/>
+                            <connections>
+                                <action selector="saveBtnClick:" destination="-1" eventType="touchUpInside" id="nDU-l2-HPP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KI-M0-5IM">
+                            <rect key="frame" x="251.5" y="10" width="60" height="60"/>
+                            <state key="normal" image="fenxiang"/>
+                            <connections>
+                                <action selector="shareBtnClick:" destination="-1" eventType="touchUpInside" id="WDF-Wu-uEY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.1803921568627451" blue="0.18823529411764706" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="b2O-b5-u9e" firstAttribute="height" secondItem="uWF-tq-NTF" secondAttribute="height" constant="-20" id="0UN-aC-qSQ"/>
+                        <constraint firstItem="9KI-M0-5IM" firstAttribute="height" secondItem="b2O-b5-u9e" secondAttribute="height" id="41C-t5-vys"/>
+                        <constraint firstItem="9KI-M0-5IM" firstAttribute="centerX" secondItem="uWF-tq-NTF" secondAttribute="centerX" multiplier="1.5" id="93H-t1-kdW"/>
+                        <constraint firstAttribute="height" constant="80" id="K55-Xi-5BR"/>
+                        <constraint firstItem="b2O-b5-u9e" firstAttribute="centerY" secondItem="uWF-tq-NTF" secondAttribute="centerY" id="cLn-Xf-WHO"/>
+                        <constraint firstItem="9KI-M0-5IM" firstAttribute="centerY" secondItem="b2O-b5-u9e" secondAttribute="centerY" id="frb-qU-RxK"/>
+                        <constraint firstItem="b2O-b5-u9e" firstAttribute="width" secondItem="uWF-tq-NTF" secondAttribute="height" constant="-20" id="kMx-3Y-5RP"/>
+                        <constraint firstItem="b2O-b5-u9e" firstAttribute="centerX" secondItem="uWF-tq-NTF" secondAttribute="centerX" multiplier="0.5" id="u4f-KG-pAU"/>
+                        <constraint firstItem="9KI-M0-5IM" firstAttribute="width" secondItem="b2O-b5-u9e" secondAttribute="width" id="wLv-Yr-hBo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-Yt-x1e">
+                    <rect key="frame" x="10" y="10" width="355" height="487"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fanhui" translatesAutoresizingMaskIntoConstraints="NO" id="89n-TY-AbD">
+                            <rect key="frame" x="171.5" y="233" width="12" height="21"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="89n-TY-AbD" secondAttribute="trailing" id="2ig-ih-SYm"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="89n-TY-AbD" secondAttribute="bottom" id="EzM-LR-PIg"/>
+                        <constraint firstItem="89n-TY-AbD" firstAttribute="centerY" secondItem="0V4-Yt-x1e" secondAttribute="centerY" id="PDC-Ly-PKR"/>
+                        <constraint firstItem="89n-TY-AbD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0V4-Yt-x1e" secondAttribute="top" id="hGC-S2-FjR"/>
+                        <constraint firstItem="89n-TY-AbD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0V4-Yt-x1e" secondAttribute="leading" id="jm1-p5-9j2"/>
+                        <constraint firstItem="89n-TY-AbD" firstAttribute="centerX" secondItem="0V4-Yt-x1e" secondAttribute="centerX" id="lcr-Rg-pfi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uWF-tq-NTF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9qN-NT-zrx"/>
+                <constraint firstItem="uWF-tq-NTF" firstAttribute="top" secondItem="0V4-Yt-x1e" secondAttribute="bottom" constant="10" id="Bgd-sf-0oh"/>
+                <constraint firstItem="0V4-Yt-x1e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Drk-t0-4tC"/>
+                <constraint firstAttribute="trailing" secondItem="0V4-Yt-x1e" secondAttribute="trailing" constant="10" id="Ept-c7-pO4"/>
+                <constraint firstItem="0V4-Yt-x1e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="ZYt-2W-oWs"/>
+                <constraint firstAttribute="trailing" secondItem="uWF-tq-NTF" secondAttribute="trailing" id="dfr-A9-VTv"/>
+                <constraint firstAttribute="bottom" secondItem="uWF-tq-NTF" secondAttribute="bottom" constant="80" id="rj2-yt-fw5"/>
+            </constraints>
+            <point key="canvasLocation" x="49.5" y="-183.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baocun" width="46" height="46"/>
+        <image name="fanhui" width="12" height="21"/>
+        <image name="fenxiang" width="46" height="46"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TextContentView">
+            <rect key="frame" x="0.0" y="0.0" width="516" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pH5-5f-bhQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="J1w-oP-eRJ"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GMJ-mN-2Z7">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0xm-yK-6Ul">
+                    <connections>
+                        <action selector="textAlphaValueChange:" destination="iN0-l3-epB" eventType="valueChanged" id="2gv-vT-90M"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="x22-tt-TuW">
+                    <connections>
+                        <action selector="fontSizeValueChange:" destination="iN0-l3-epB" eventType="valueChanged" id="eft-kU-16H"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5bA-i6-OBo">
+                    <connections>
+                        <action selector="lineSpaceValueChange:" destination="iN0-l3-epB" eventType="valueChanged" id="xGg-gm-Xqg"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-5" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="eAY-hQ-yxv">
+                    <connections>
+                        <action selector="charSpaceValueChange:" destination="iN0-l3-epB" eventType="valueChanged" id="ZH9-fh-44A"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pH5-5f-bhQ" secondAttribute="trailing" id="B9R-8l-stR"/>
+                <constraint firstItem="x22-tt-TuW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="BoR-Yz-7Lk"/>
+                <constraint firstAttribute="bottom" secondItem="pH5-5f-bhQ" secondAttribute="bottom" id="FOv-zL-Kas"/>
+                <constraint firstItem="0xm-yK-6Ul" firstAttribute="centerX" secondItem="x22-tt-TuW" secondAttribute="centerX" id="K5Z-7C-MOO"/>
+                <constraint firstItem="0xm-yK-6Ul" firstAttribute="centerY" secondItem="x22-tt-TuW" secondAttribute="centerY" id="MED-VI-jRE"/>
+                <constraint firstItem="5bA-i6-OBo" firstAttribute="centerX" secondItem="x22-tt-TuW" secondAttribute="centerX" id="P8a-7H-vIf"/>
+                <constraint firstItem="eAY-hQ-yxv" firstAttribute="centerX" secondItem="x22-tt-TuW" secondAttribute="centerX" id="XXX-iA-ygw"/>
+                <constraint firstItem="x22-tt-TuW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZiA-03-U3P"/>
+                <constraint firstItem="eAY-hQ-yxv" firstAttribute="centerY" secondItem="x22-tt-TuW" secondAttribute="centerY" id="dXR-pl-2od"/>
+                <constraint firstItem="0xm-yK-6Ul" firstAttribute="width" secondItem="x22-tt-TuW" secondAttribute="width" id="eJL-Os-mT9"/>
+                <constraint firstItem="x22-tt-TuW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="ioA-v5-7Gf"/>
+                <constraint firstItem="5bA-i6-OBo" firstAttribute="centerY" secondItem="x22-tt-TuW" secondAttribute="centerY" id="nGj-7b-tNd"/>
+                <constraint firstItem="pH5-5f-bhQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rBz-aS-ubD"/>
+                <constraint firstItem="5bA-i6-OBo" firstAttribute="width" secondItem="x22-tt-TuW" secondAttribute="width" id="saA-zv-lPC"/>
+                <constraint firstItem="eAY-hQ-yxv" firstAttribute="width" secondItem="x22-tt-TuW" secondAttribute="width" id="w2R-IL-0Sa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectonView" destination="pH5-5f-bhQ" id="1Vi-mj-z8N"/>
+                <outlet property="fontSizeSlider" destination="x22-tt-TuW" id="XJI-U6-XGq"/>
+                <outlet property="hangJianJuSlider" destination="5bA-i6-OBo" id="5XD-Qm-dIy"/>
+                <outlet property="textAlphaSlider" destination="0xm-yK-6Ul" id="fNC-c5-UgY"/>
+                <outlet property="ziJianJuSlider" destination="eAY-hQ-yxv" id="002-aZ-Wp8"/>
+            </connections>
+            <point key="canvasLocation" x="772" y="316"/>
+        </view>
+    </objects>
+</document>

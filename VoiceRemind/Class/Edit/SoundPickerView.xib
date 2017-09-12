@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SoundPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyl-Ao-w9B">
+                    <rect key="frame" x="64" y="120" width="192" height="240"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒铃声" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zkj-c0-fat">
+                            <rect key="frame" x="0.0" y="10" width="192" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TpW-Ft-3BK">
+                            <rect key="frame" x="10" y="41" width="172" height="189"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zkj-c0-fat" firstAttribute="centerX" secondItem="Uyl-Ao-w9B" secondAttribute="centerX" id="570-1h-v7l"/>
+                        <constraint firstAttribute="trailing" secondItem="zkj-c0-fat" secondAttribute="trailing" id="7YT-l6-nVZ"/>
+                        <constraint firstItem="zkj-c0-fat" firstAttribute="leading" secondItem="Uyl-Ao-w9B" secondAttribute="leading" id="8aD-wh-4ke"/>
+                        <constraint firstItem="TpW-Ft-3BK" firstAttribute="top" secondItem="zkj-c0-fat" secondAttribute="bottom" constant="10" id="Boe-X8-m4m"/>
+                        <constraint firstAttribute="trailing" secondItem="TpW-Ft-3BK" secondAttribute="trailing" constant="10" id="QGg-SL-5OW"/>
+                        <constraint firstAttribute="bottom" secondItem="TpW-Ft-3BK" secondAttribute="bottom" constant="10" id="aQa-N0-bte"/>
+                        <constraint firstItem="zkj-c0-fat" firstAttribute="top" secondItem="Uyl-Ao-w9B" secondAttribute="top" constant="10" id="dzd-IE-cY8"/>
+                        <constraint firstItem="TpW-Ft-3BK" firstAttribute="leading" secondItem="Uyl-Ao-w9B" secondAttribute="leading" constant="10" id="fhr-I5-xsq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Uyl-Ao-w9B" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="3xj-eF-0sp"/>
+                <constraint firstItem="Uyl-Ao-w9B" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="A01-jz-C8D"/>
+                <constraint firstItem="Uyl-Ao-w9B" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VLL-xK-u1C"/>
+                <constraint firstItem="Uyl-Ao-w9B" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uxq-4p-xmO"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="Uyl-Ao-w9B" id="Af4-Fd-XsH"/>
+                <outlet property="tableView" destination="TpW-Ft-3BK" id="V5Y-gR-2Ke"/>
+                <outlet property="titleLabel" destination="zkj-c0-fat" id="Qgw-yk-LH0"/>
+            </connections>
+            <point key="canvasLocation" x="549" y="359"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDCameraViewController">
+            <connections>
+                <outlet property="cameraTypeBtn" destination="v44-qA-Qgf" id="tpM-1J-lLR"/>
+                <outlet property="cameraView" destination="ssJ-3Q-YyO" id="S3D-L3-OJa"/>
+                <outlet property="cancelBtn" destination="4SO-03-WXX" id="feq-g9-HQO"/>
+                <outlet property="doneBtn" destination="nra-4o-hE7" id="SCI-7j-det"/>
+                <outlet property="flashBtn" destination="sR0-MK-9Ht" id="p6W-NK-70G"/>
+                <outlet property="imageView" destination="Vhq-FW-b4N" id="yUK-ka-Vog"/>
+                <outlet property="resetBtn" destination="7GJ-3P-WjJ" id="J7X-Ds-c0A"/>
+                <outlet property="takePhotoBtn" destination="F2T-AM-Rgw" id="O9G-ma-clV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssJ-3Q-YyO" customClass="GPUImageView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vhq-FW-b4N"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-v3-t5Y">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="vxz-YP-t0k"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-AM-Rgw">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="2Di-dv-e5I"/>
+                                <constraint firstAttribute="height" constant="80" id="ZlG-Xo-KIj"/>
+                            </constraints>
+                            <state key="normal" image="take-photo"/>
+                            <connections>
+                                <action selector="takePhotoBtnClick:" destination="-1" eventType="touchUpInside" id="heH-FI-M0R"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GJ-3P-WjJ">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Ycc-za-pR9"/>
+                                <constraint firstAttribute="height" constant="40" id="q3X-Ol-tvT"/>
+                            </constraints>
+                            <state key="normal" image="reset"/>
+                            <connections>
+                                <action selector="resetBtnClick:" destination="-1" eventType="touchUpInside" id="yDd-3G-1hG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v44-qA-Qgf">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="26z-PS-Fph"/>
+                                <constraint firstAttribute="width" constant="40" id="t5p-W5-JcA"/>
+                            </constraints>
+                            <state key="normal" image="cameeachange"/>
+                            <connections>
+                                <action selector="trunCamera:" destination="-1" eventType="touchUpInside" id="Xnn-vX-0BK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SO-03-WXX">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lQ7-LY-XKE"/>
+                                <constraint firstAttribute="width" constant="40" id="lun-X4-mXw"/>
+                            </constraints>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="fanHuiBtnClick:" destination="-1" eventType="touchUpInside" id="xWu-EB-lhB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR0-MK-9Ht">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="0NR-D8-BBY"/>
+                                <constraint firstAttribute="height" constant="40" id="7dR-TD-WhR"/>
+                            </constraints>
+                            <state key="normal" image="flash-close"/>
+                            <state key="selected" image="flash"/>
+                            <connections>
+                                <action selector="flashBtnClick:" destination="-1" eventType="touchUpInside" id="haC-aj-TYd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nra-4o-hE7">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="V9l-5q-sin"/>
+                                <constraint firstAttribute="width" constant="40" id="lSb-yl-7dq"/>
+                            </constraints>
+                            <state key="normal" image="use"/>
+                            <connections>
+                                <action selector="doneBtnClick:" destination="-1" eventType="touchUpInside" id="7Gw-8E-I0Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="F2T-AM-Rgw" secondAttribute="bottom" constant="10" id="2Jf-oU-v8f"/>
+                        <constraint firstItem="5k8-v3-t5Y" firstAttribute="top" secondItem="ssJ-3Q-YyO" secondAttribute="top" id="6Zy-Jz-7cz"/>
+                        <constraint firstItem="Vhq-FW-b4N" firstAttribute="leading" secondItem="ssJ-3Q-YyO" secondAttribute="leading" id="7Vj-fV-1pn"/>
+                        <constraint firstAttribute="trailing" secondItem="Vhq-FW-b4N" secondAttribute="trailing" id="7dZ-Os-PCu"/>
+                        <constraint firstItem="7GJ-3P-WjJ" firstAttribute="centerY" secondItem="F2T-AM-Rgw" secondAttribute="centerY" id="Acp-4b-wd2"/>
+                        <constraint firstItem="4SO-03-WXX" firstAttribute="top" secondItem="ssJ-3Q-YyO" secondAttribute="top" constant="5" id="AyN-tb-Gue"/>
+                        <constraint firstItem="v44-qA-Qgf" firstAttribute="top" secondItem="ssJ-3Q-YyO" secondAttribute="top" constant="5" id="C24-ZZ-Q5A"/>
+                        <constraint firstItem="7GJ-3P-WjJ" firstAttribute="centerX" secondItem="ssJ-3Q-YyO" secondAttribute="centerX" multiplier="0.4" id="Eeq-QQ-ljs"/>
+                        <constraint firstItem="sR0-MK-9Ht" firstAttribute="top" secondItem="ssJ-3Q-YyO" secondAttribute="top" constant="5" id="IGq-vD-MUM"/>
+                        <constraint firstItem="Vhq-FW-b4N" firstAttribute="top" secondItem="ssJ-3Q-YyO" secondAttribute="top" id="Rge-Dh-f7V"/>
+                        <constraint firstItem="5k8-v3-t5Y" firstAttribute="leading" secondItem="ssJ-3Q-YyO" secondAttribute="leading" id="UYL-kv-sZi"/>
+                        <constraint firstItem="nra-4o-hE7" firstAttribute="centerX" secondItem="ssJ-3Q-YyO" secondAttribute="centerX" multiplier="1.6" id="W0d-cy-Kle"/>
+                        <constraint firstAttribute="trailing" secondItem="5k8-v3-t5Y" secondAttribute="trailing" id="aRO-jA-sGh"/>
+                        <constraint firstAttribute="trailing" secondItem="v44-qA-Qgf" secondAttribute="trailing" constant="10" id="hZh-dx-98w"/>
+                        <constraint firstItem="4SO-03-WXX" firstAttribute="leading" secondItem="ssJ-3Q-YyO" secondAttribute="leading" constant="10" id="l2t-B9-QG6"/>
+                        <constraint firstItem="sR0-MK-9Ht" firstAttribute="centerX" secondItem="Vhq-FW-b4N" secondAttribute="centerX" id="lee-PY-xkt"/>
+                        <constraint firstItem="F2T-AM-Rgw" firstAttribute="centerX" secondItem="ssJ-3Q-YyO" secondAttribute="centerX" id="mSP-uP-fbg"/>
+                        <constraint firstItem="nra-4o-hE7" firstAttribute="centerY" secondItem="F2T-AM-Rgw" secondAttribute="centerY" id="uVl-1k-7p8"/>
+                        <constraint firstAttribute="bottom" secondItem="Vhq-FW-b4N" secondAttribute="bottom" id="ylS-N1-H4t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ssJ-3Q-YyO" secondAttribute="bottom" id="F3c-w6-f5c"/>
+                <constraint firstAttribute="trailing" secondItem="ssJ-3Q-YyO" secondAttribute="trailing" id="YoR-fH-WsJ"/>
+                <constraint firstItem="ssJ-3Q-YyO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aLK-5v-spw"/>
+                <constraint firstItem="ssJ-3Q-YyO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yBL-F7-rDQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-137" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="11" height="19"/>
+        <image name="cameeachange" width="25" height="21"/>
+        <image name="flash" width="13" height="23"/>
+        <image name="flash-close" width="19" height="23"/>
+        <image name="reset" width="24" height="21"/>
+        <image name="take-photo" width="69" height="69"/>
+        <image name="use" width="23" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>width</key>
+		<string>320</string>
+		<key>height</key>
+		<string>240</string>
+		<key>bitRate</key>
+		<string>307200</string>
+	</dict>
+	<dict>
+		<key>width</key>
+		<string>480</string>
+		<key>height</key>
+		<string>320</string>
+		<key>bitRate</key>
+		<string>307200</string>
+	</dict>
+	<dict>
+		<key>hd</key>
+		<string>640x480</string>
+		<key>width</key>
+		<string>640</string>
+		<key>height</key>
+		<string>480</string>
+		<key>bitRate</key>
+		<string>1024000</string>
+	</dict>
+	<dict>
+		<key>width</key>
+		<string>1024</string>
+		<key>height</key>
+		<string>600</string>
+		<key>bitRate</key>
+		<string>1536000</string>
+	</dict>
+	<dict>
+		<key>width</key>
+		<string>1280</string>
+		<key>height</key>
+		<string>720</string>
+		<key>bitRate</key>
+		<string>3072000</string>
+	</dict>
+	<dict>
+		<key>width</key>
+		<string>1920</string>
+		<key>height</key>
+		<string>1080</string>
+		<key>bitRate</key>
+		<string>4608000</string>
+	</dict>
+</array>
+</plist>

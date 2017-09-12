@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oWT-tQ-hTp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mind Map View Controller-->
+        <scene sceneID="NZr-f0-Hvp">
+            <objects>
+                <viewController id="oWT-tQ-hTp" customClass="SNMindMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ns9-dc-FF0"/>
+                        <viewControllerLayoutGuide type="bottom" id="cnW-EK-0kd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SdP-K6-LbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" minimumZoomScale="0.25" maximumZoomScale="2" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="xM0-Wk-3uh" customClass="SNScrollView">
+                                <rect key="frame" x="0.0" y="20" width="275" height="547"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydb-pE-d7V" customClass="SNContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Rl-nH-HHC" customClass="SNContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDl-4E-8lO" customClass="SNContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-cd-gEm" customClass="SNContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7e-mj-c7L" userLabel="Text Container" customClass="SNContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6GG-is-sBL" customClass="SNNodeTextView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="89"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4i-Jz-pG3" customClass="SNContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-lg-C4O">
+                                                        <rect key="frame" x="55" y="154" width="25" height="3"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yuan8" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-pJ-LCj">
+                                                        <rect key="frame" x="66" y="216" width="8" height="8"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDz-be-Ptd">
+                                                        <rect key="frame" x="86" y="137" width="40" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="jia8"/>
+                                                        <connections>
+                                                            <action selector="addSubNode:" destination="oWT-tQ-hTp" eventType="touchUpInside" id="Vm7-Uc-SJh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yuan8" translatesAutoresizingMaskIntoConstraints="NO" id="paq-ee-Ab4">
+                                                        <rect key="frame" x="26" y="216" width="8" height="8"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zb9-XC-6hs" userLabel="Height Placeholder">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LHK-5E-HH3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nta-xI-uHM" userLabel="Width Placeholder">
+                                <rect key="frame" x="275" y="20" width="100" height="647"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gyn-s3-OhE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nta-xI-uHM" firstAttribute="leading" secondItem="xM0-Wk-3uh" secondAttribute="trailing" id="65k-3s-x18"/>
+                            <constraint firstItem="zb9-XC-6hs" firstAttribute="leading" secondItem="SdP-K6-LbQ" secondAttribute="leading" id="Axn-Hj-ZHj"/>
+                            <constraint firstItem="zb9-XC-6hs" firstAttribute="top" secondItem="xM0-Wk-3uh" secondAttribute="bottom" id="SsO-rd-a6c"/>
+                            <constraint firstAttribute="trailing" secondItem="zb9-XC-6hs" secondAttribute="trailing" id="ZbH-rj-OkG"/>
+                            <constraint firstItem="nta-xI-uHM" firstAttribute="top" secondItem="ns9-dc-FF0" secondAttribute="bottom" id="fLw-Zc-Icj"/>
+                            <constraint firstItem="xM0-Wk-3uh" firstAttribute="top" secondItem="ns9-dc-FF0" secondAttribute="bottom" id="jeI-3f-pmY"/>
+                            <constraint firstAttribute="trailing" secondItem="nta-xI-uHM" secondAttribute="trailing" id="oaH-8b-H6Y"/>
+                            <constraint firstItem="cnW-EK-0kd" firstAttribute="top" secondItem="zb9-XC-6hs" secondAttribute="bottom" id="vCq-NX-83A"/>
+                            <constraint firstItem="xM0-Wk-3uh" firstAttribute="leading" secondItem="SdP-K6-LbQ" secondAttribute="leading" id="wbT-TP-tVE"/>
+                            <constraint firstItem="cnW-EK-0kd" firstAttribute="top" secondItem="nta-xI-uHM" secondAttribute="bottom" id="y6K-7J-W3I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hYK-pc-aHU"/>
+                    <connections>
+                        <outlet property="addButton" destination="UDz-be-Ptd" id="dwN-xI-vIR"/>
+                        <outlet property="bar" destination="6xi-Rx-SPg" id="I46-T4-2Ya"/>
+                        <outlet property="heightHoderView" destination="zb9-XC-6hs" id="onC-Md-pVn"/>
+                        <outlet property="knobA" destination="paq-ee-Ab4" id="XDH-Cm-EiP"/>
+                        <outlet property="knobB" destination="Fu8-pJ-LCj" id="8KC-ya-lca"/>
+                        <outlet property="knobContainer" destination="E4i-Jz-pG3" id="Czo-q3-mpm"/>
+                        <outlet property="line" destination="c9V-lg-C4O" id="5mQ-tx-fQW"/>
+                        <outlet property="mainContainer" destination="ydb-pE-d7V" id="u53-iA-gVL"/>
+                        <outlet property="nodeContainer" destination="gDl-4E-8lO" id="hv6-3Z-6JX"/>
+                        <outlet property="pathContainer" destination="6Rl-nH-HHC" id="BHX-2v-y9T"/>
+                        <outlet property="placeholderHeightConstraint" destination="LHK-5E-HH3" id="7ht-zV-n1Q"/>
+                        <outlet property="placeholderWidthConstraint" destination="gyn-s3-OhE" id="fpI-YV-iUe"/>
+                        <outlet property="scrollview" destination="xM0-Wk-3uh" id="Ndd-aA-HGn"/>
+                        <outlet property="tempContainer" destination="g6f-cd-gEm" id="Abk-A8-RlM"/>
+                        <outlet property="textContainer" destination="s7e-mj-c7L" id="Iu2-1V-YlJ"/>
+                        <outlet property="textEditor" destination="6GG-is-sBL" id="h13-EE-Vok"/>
+                        <outlet property="widthHodelView" destination="nta-xI-uHM" id="OxH-GG-2cb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWj-hs-Rrl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="6xi-Rx-SPg" customClass="SNKeyBoardBar">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-le-pyh">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.29411764705882354" green="0.31372549019607843" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cPe-le-pyh" secondAttribute="trailing" id="Biz-bK-rUH"/>
+                        <constraint firstItem="cPe-le-pyh" firstAttribute="leading" secondItem="6xi-Rx-SPg" secondAttribute="leading" id="Ovp-BH-jUq"/>
+                        <constraint firstItem="cPe-le-pyh" firstAttribute="top" secondItem="6xi-Rx-SPg" secondAttribute="top" id="k9K-ix-lr6"/>
+                        <constraint firstAttribute="bottom" secondItem="cPe-le-pyh" secondAttribute="bottom" id="mYB-Hf-CIS"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="scrollView" destination="cPe-le-pyh" id="13p-8k-Ouc"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-2530" y="-1914"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jia8" width="11" height="11"/>
+        <image name="line" width="52" height="6"/>
+        <image name="yuan8" width="7" height="7"/>
+    </resources>
+</document>

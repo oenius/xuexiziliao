@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IDBottomToolView">
+            <rect key="frame" x="0.0" y="0.0" width="589" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDa-vY-XFT">
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9Gh-xe-fpg"/>
+                    </constraints>
+                    <state key="normal" image="penunclick"/>
+                    <state key="selected" image="penclick" backgroundImage="clickborder"/>
+                    <connections>
+                        <action selector="kouTuBtnclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vgx-1o-lgb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ha-iF-z8c">
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="eraserunclick"/>
+                    <state key="selected" image="eraserclickvv" backgroundImage="clickborder"/>
+                    <connections>
+                        <action selector="eraserBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qud-qB-b8d"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDh-9s-xOr">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NDh-9s-xOr" secondAttribute="height" multiplier="1:1" id="6bO-c9-rWA"/>
+                        <constraint firstAttribute="height" constant="30" id="QZW-Yf-263"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-CP-um6">
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="mzK-p9-gf9"/>
+                    </connections>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rd-pb-UcJ">
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PAC-SU-JXt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="eDa-vY-XFT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0d7-ty-Rmi"/>
+                <constraint firstAttribute="trailing" secondItem="1Rd-pb-UcJ" secondAttribute="trailing" id="0hK-ZL-RaX"/>
+                <constraint firstItem="2Ha-iF-z8c" firstAttribute="height" secondItem="eDa-vY-XFT" secondAttribute="height" id="6CO-nW-6cL"/>
+                <constraint firstAttribute="trailing" secondItem="nK4-CP-um6" secondAttribute="trailing" constant="10" id="6O1-D9-W75"/>
+                <constraint firstItem="nK4-CP-um6" firstAttribute="leading" secondItem="NDh-9s-xOr" secondAttribute="trailing" constant="10" id="7Hr-b6-fDj"/>
+                <constraint firstItem="1Rd-pb-UcJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MXr-Ka-4NN"/>
+                <constraint firstItem="nK4-CP-um6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-25" id="OeI-TJ-iok"/>
+                <constraint firstItem="NDh-9s-xOr" firstAttribute="centerY" secondItem="nK4-CP-um6" secondAttribute="centerY" id="SzE-cU-ul3"/>
+                <constraint firstItem="2Ha-iF-z8c" firstAttribute="leading" secondItem="eDa-vY-XFT" secondAttribute="trailing" id="ToA-X5-9ab"/>
+                <constraint firstItem="2Ha-iF-z8c" firstAttribute="leading" secondItem="eDa-vY-XFT" secondAttribute="trailing" id="VVs-UA-P0n"/>
+                <constraint firstAttribute="bottom" secondItem="2Ha-iF-z8c" secondAttribute="bottom" id="d1w-Qn-nsg"/>
+                <constraint firstItem="NDh-9s-xOr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.1" id="gf2-ts-cGP"/>
+                <constraint firstItem="2Ha-iF-z8c" firstAttribute="width" secondItem="eDa-vY-XFT" secondAttribute="width" id="jIM-i1-9bO"/>
+                <constraint firstAttribute="trailing" secondItem="2Ha-iF-z8c" secondAttribute="trailing" id="kGE-E2-toW"/>
+                <constraint firstItem="2Ha-iF-z8c" firstAttribute="top" secondItem="1Rd-pb-UcJ" secondAttribute="bottom" id="qFv-07-Tvt"/>
+                <constraint firstAttribute="bottom" secondItem="eDa-vY-XFT" secondAttribute="bottom" id="x6p-yj-7LO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="circleHeight" destination="QZW-Yf-263" id="BqJ-2G-6aS"/>
+                <outlet property="circleView" destination="NDh-9s-xOr" id="z3u-d5-QTR"/>
+                <outlet property="eraserBtn" destination="2Ha-iF-z8c" id="TvE-ts-rKt"/>
+                <outlet property="kouTuBtn" destination="eDa-vY-XFT" id="P8G-Y4-AeH"/>
+                <outlet property="slider" destination="nK4-CP-um6" id="oLG-HL-326"/>
+            </connections>
+            <point key="canvasLocation" x="-556.5" y="-45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clickborder" width="182" height="40"/>
+        <image name="eraserclickvv" width="23" height="21"/>
+        <image name="eraserunclick" width="23" height="21"/>
+        <image name="penclick" width="17" height="17"/>
+        <image name="penunclick" width="17" height="17"/>
+    </resources>
+</document>

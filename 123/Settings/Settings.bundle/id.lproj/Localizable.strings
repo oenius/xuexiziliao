@@ -1,0 +1,54 @@
+
+/* 通用 */
+"General" = "Umum";
+
+/* 邮件发送成功 */
+"email.send email successful" = "Email berhasil dikirim";
+
+/* 邮件发送失败 */
+"email.send email failed" = "Gagal mengirim Email";
+
+/* 确定 */
+"Sure" = "OK";
+
+/* 升级到专业版 */
+"Upgrade to Pro Version" = "Tingkatkan ke Versi Pro";
+
+/* 意见反馈 */
+"Suggections" = "Tanggapan";
+
+/* 操作成功 */
+"common.Operating Successed" = "Berhasil";
+
+/* 设置 */
+"user.Settings" = "Pengaturan";
+
+/* 移除广告 */
+"Remove Ads" = "Hilangkan iklan";
+
+/* 给我们评分 */
+"setting.comment" = "Beri Kami Penilaian";
+
+/* 失败 */
+"task.fail" = "Gagal";
+
+/* 无法发送邮件，您需要激活邮件服务！ */
+"sendPhoto.System messages was unable to send the email.Please esnure that the email account is valid." = "Tidak dapat mengirimkan email. Anda perlu mengaktifkan layanan pesan.";
+
+/* More Apps*/
+"More Apps" = "Lebih banyak Aplikasi";
+
+"Payment prompt message" = "Jika anda senang menggunakan %@, Dapatkan versi Bebas-iklan untuk pengalaman yang lebih baik";
+
+/* 评论即可解锁。 */
+"massage,rate to unlock the function." = "Beri nilai di Appstore untuk membuka fungsi ini?";
+
+/* 评论 */
+"common.comment" = "Komentar";
+
+/* 广告 */
+"ads" = "Iklan";
+
+"Watch a video to unlock" = "Menonton video untuk membuka";
+
+

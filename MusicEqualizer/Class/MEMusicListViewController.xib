@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MEMusicListViewController">
+            <connections>
+                <outlet property="addBtnBottom" destination="vft-Ba-xgf" id="hGt-KZ-PJi"/>
+                <outlet property="addListBtn" destination="FoP-bI-GMc" id="Nq4-UH-Jbp"/>
+                <outlet property="tableView" destination="dTZ-S2-IS9" id="e8Z-Ef-MbI"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DdN-ZV-jMI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="dTZ-S2-IS9">
+                    <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoP-bI-GMc">
+                    <color key="backgroundColor" red="0.63529411764705879" green="0.027450980392156862" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2x6-aw-Y4E"/>
+                        <constraint firstAttribute="width" constant="50" id="K2S-GY-cSb"/>
+                    </constraints>
+                    <state key="normal" image="addList"/>
+                    <connections>
+                        <action selector="addListBtnClick:" destination="-1" eventType="touchUpInside" id="BDJ-pm-JkM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dTZ-S2-IS9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="18X-3W-fov"/>
+                <constraint firstAttribute="trailing" secondItem="FoP-bI-GMc" secondAttribute="trailing" constant="36" id="5Kw-hP-2wm"/>
+                <constraint firstAttribute="bottom" secondItem="dTZ-S2-IS9" secondAttribute="bottom" id="F1T-Je-qHX"/>
+                <constraint firstItem="dTZ-S2-IS9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HbE-2I-ndv"/>
+                <constraint firstAttribute="trailing" secondItem="dTZ-S2-IS9" secondAttribute="trailing" id="sy4-KC-Fa5"/>
+                <constraint firstAttribute="bottom" secondItem="FoP-bI-GMc" secondAttribute="bottom" constant="5" id="vft-Ba-xgf"/>
+            </constraints>
+            <point key="canvasLocation" x="-360" y="-192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addList" width="66" height="66"/>
+    </resources>
+</document>

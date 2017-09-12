@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXt-kL-iSD">
+                    <rect key="frame" x="0.0" y="96" width="320" height="288"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VVz-Ha-y67">
+                            <rect key="frame" x="0.0" y="62" width="320" height="216"/>
+                            <date key="date" timeIntervalSinceReferenceDate="493809254.23089302">
+                                <!--2016-08-25 09:14:14 +0000-->
+                            </date>
+                        </datePicker>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P71-C5-H6o">
+                            <rect key="frame" x="126" y="18" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7XS-8R-69s">
+                            <rect key="frame" x="163" y="364" width="97" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VVz-Ha-y67" firstAttribute="centerY" secondItem="jXt-kL-iSD" secondAttribute="centerY" id="1BP-Am-R33"/>
+                        <constraint firstAttribute="width" constant="320" id="567-5L-a62"/>
+                        <constraint firstItem="VVz-Ha-y67" firstAttribute="centerX" secondItem="jXt-kL-iSD" secondAttribute="centerX" id="61R-gj-O1p"/>
+                        <constraint firstAttribute="height" constant="288" id="FMF-aj-WRF"/>
+                        <constraint firstAttribute="bottom" secondItem="VVz-Ha-y67" secondAttribute="bottom" constant="10" id="jf1-gw-krW"/>
+                        <constraint firstItem="P71-C5-H6o" firstAttribute="top" secondItem="jXt-kL-iSD" secondAttribute="top" constant="18" id="nML-uf-XtU"/>
+                        <constraint firstItem="P71-C5-H6o" firstAttribute="centerX" secondItem="jXt-kL-iSD" secondAttribute="centerX" id="z2K-8q-KD1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="7XS-8R-69s"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="1BP-Am-R33"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jXt-kL-iSD" secondAttribute="trailing" id="Cxe-k6-O8J"/>
+                <constraint firstItem="jXt-kL-iSD" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Jkx-rd-joT"/>
+                <constraint firstItem="jXt-kL-iSD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O6E-jY-6Vk"/>
+                <constraint firstItem="jXt-kL-iSD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RIs-lm-aTn"/>
+                <constraint firstItem="jXt-kL-iSD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="VVc-8z-Gra"/>
+                <constraint firstAttribute="bottom" secondItem="jXt-kL-iSD" secondAttribute="bottom" id="d2M-08-3kb"/>
+                <constraint firstItem="jXt-kL-iSD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lpf-i7-lv6"/>
+                <constraint firstItem="jXt-kL-iSD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="z5E-c3-xBS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Cxe-k6-O8J"/>
+                    <exclude reference="Jkx-rd-joT"/>
+                    <exclude reference="O6E-jY-6Vk"/>
+                    <exclude reference="VVc-8z-Gra"/>
+                    <exclude reference="d2M-08-3kb"/>
+                    <exclude reference="lpf-i7-lv6"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="contentView" destination="jXt-kL-iSD" id="VpY-ac-D2Y"/>
+                <outlet property="datePickker" destination="VVz-Ha-y67" id="SJb-qg-11b"/>
+                <outlet property="titleLabel" destination="P71-C5-H6o" id="AGV-qH-byJ"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="274"/>
+        </view>
+    </objects>
+</document>

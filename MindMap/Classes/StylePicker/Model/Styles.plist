@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string></string>
+		<key>styles</key>
+		<array>
+			<dict>
+				<key>styleName</key>
+				<string>SNDefaultStyle</string>
+				<key>imageName</key>
+				<string>SNDefaultStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNBlackStyle</string>
+				<key>imageName</key>
+				<string>SNBlackStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNBrownStyle</string>
+				<key>imageName</key>
+				<string>SNBrownStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNGoldenStyle</string>
+				<key>imageName</key>
+				<string>SNGoldenStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNGreenStyle</string>
+				<key>imageName</key>
+				<string>SNGreenStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNLavenderStyle</string>
+				<key>imageName</key>
+				<string>SNLavenderStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNLightGreenStyle</string>
+				<key>imageName</key>
+				<string>SNLightGreenStyle</string>
+			</dict>
+			<dict>
+				<key>styleName</key>
+				<string>SNPinkStyle</string>
+				<key>imageName</key>
+				<string>SNPinkStyle</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

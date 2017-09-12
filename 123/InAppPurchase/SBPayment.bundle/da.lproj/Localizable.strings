@@ -1,0 +1,40 @@
+/* 购买 */
+"Buy" = "Køb";
+
+/* 商品信息 */
+"Product info" = "Produktinfo";
+
+/* 价格 */
+"Price" = "Pris";
+
+/* 描述 */
+"Description" = "Beskrivelse";
+
+/* 恢复 */
+"Restore" = "Gendan";
+
+/* 请求商品信息... */
+"Requesting for product info..." = "Forespørger produktinfo...";
+
+/* 提示信息 */
+"Remind info" = "Påmindelsesinfo";
+
+/* 取消 */
+"cancel" = "Afbryd";
+
+/* 移除广告成功! */
+"key.Remove advertising success" = "Fjern reklamer success!";
+
+/* 失败 */
+"task.fail" = "Mislykkedes";
+
+/* 恢复购买 */
+"Restore.Purchase" = "Gendan Køb";
+
+/* 没有广告，完美体验 */
+"No ads for perfect experience" = "Ingen reklamer for den perfekte oplevelse";
+
+"DK_dialog_title_net_error" = "Internet ikke tilgængelig, prøv igen senere";
+
+"The purchase failed. Please try again later" = "Købet mislykkedes, prøv igen senere";
+

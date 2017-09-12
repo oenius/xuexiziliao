@@ -1,0 +1,169 @@
+//
+//  MEPrefixHeader.pch
+//  MusicEqualizer
+//
+//  Created by 何少博 on 17/1/12.
+//  Copyright © 2017年 shaobo.He. All rights reserved.
+//
+
+#ifndef MEPrefixHeader_pch
+#define MEPrefixHeader_pch
+
+
+#endif /* MEPrefixHeader_pch */
+
+//#ifndef __IPHONE_3_0
+//#warning "This project uses features only available in iOS SDK 3.0 and later."
+//#endif
+
+//#ifdef __OBJC__
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#endif
+
+
+#ifdef DEBUG
+#define LOG(...) NSLog(__VA_ARGS__)
+#define LOG_METHOD NSLog(@"%s", __func__)
+#else
+#define LOG(...);
+#define LOG_METHOD
+#endif
+//
+//#define LOCALIZED(...)      NSLocalizedString(__VA_ARGS__, @"")
+//
+//#define FORMAT(format, ...) [NSString stringWithFormat: (format), ##__VA_ARGS__]
+//#define FORMAT_INT(...)     [NSString stringWithFormat: @"%d", __VA_ARGS__]
+
+
+/* 歌曲 */
+#define MEL_songs                   NSLocalizedString(@"button.select.phone", @"songs")
+/* 播放列表 */
+#define MEL_Playlists               NSLocalizedString(@"Playlists", @"Playlists")
+
+/* 数据刷新成功 */
+#define MEL_RefreshedSuccessfully   NSLocalizedString(@"Refreshed.successfully", @"Refreshed data successfully")
+/* 设置 */
+#define MEL_setting                 NSLocalizedString(@"setting", @"Settings")
+/* 未知 */
+#define MEL_Unknown                 NSLocalizedString(@"Unknown", @"Unknown")
+/* 添加成功 */
+#define MEL_Add_Success             NSLocalizedString(@"Add_Success", @"Added successfully")
+/* 添加音乐 */
+#define MEL_AddMusic                NSLocalizedString(@"BB__AddMusic", @"Add Music")
+/* 授权失败 */
+#define MEL_AuthorizationFailed     NSLocalizedString(@"user.Authorization failed", @"Authorization failed")
+/* 全选 */
+#define MEL_SelectAll               NSLocalizedString(@"Select All", @"Select All")
+/* 取消 */
+#define MEL_Cancel                  NSLocalizedString(@"common.Cancel", @"Cancel")
+/* 完成 */
+#define MEL_Done                    NSLocalizedString(@"Done", @"Done")
+/* 添加 */
+#define MEL_Add                     NSLocalizedString(@"gallery.Add", @"Add")
+/* 保存 */
+#define MEL_Save                    NSLocalizedString(@"Save", @"Save")
+/* 无 */
+#define MEL_none                    NSLocalizedString(@"none", @"None")
+/* 关闭 */
+#define MEL_Close                   NSLocalizedString(@"close", @"Close")
+/* 确定 */
+#define MEL_OK                      NSLocalizedString(@"BG_OK", @"OK")
+/* 删除 */
+#define MEL_Delete                  NSLocalizedString(@"bb_in_delete", @"Delete")
+/* 重命名 */
+#define MEL_Rename                  NSLocalizedString(@"rename", @"Rename")
+/* 请输入名称 */
+#define MEL_EnterName               NSLocalizedString(@"hint_foler_name", @"Please enter a name")
+/* 名称不能为空 */
+#define MEL_NotBeNull               NSLocalizedString(@"The name can not be null", @"The name can not be null")
+/* 选择 */
+#define MEL_Select                  NSLocalizedString(@"common.select", @"Select")
+/* 媒体库 */
+#define MEL_Media                   NSLocalizedString(@"Media", @"Media")
+/* 流行 */
+#define MEL_Pop                     NSLocalizedString(@"Pop", @"Pop")
+/* 摇滚 */
+#define MEL_Rock_Roll               NSLocalizedString(@"Rock_Roll", @"Rock & Roll")
+/* 电子舞曲 */
+#define MEL_Drum_Bass               NSLocalizedString(@"Drum & Bass", @"Drum & Bass")
+/* 爵士 */
+#define MEL_Jazz                    NSLocalizedString(@"Jazz", @"Jazz")
+/* 歌单 */
+#define MEL_SongList                NSLocalizedString(@"song_list", @"Playlist")
+/* 我喜欢 */
+#define MEL_MyFavorite              NSLocalizedString(@"my_favorite", @"My favorites")
+/* 重低音 */
+#define MEL_MegaBass                NSLocalizedString(@"Subwoofer", @"Mega bass")
+/* 人声 */
+#define MEL_Vocal                   NSLocalizedString(@"man_voice", @"vocal")
+/* 现场 */
+#define MEL_Live                    NSLocalizedString(@"on_site", @"Live")
+/* 民谣 */
+#define MEL_Ballad                  NSLocalizedString(@"ballad", @"ballad")
+/* 古典 */
+#define MEL_Classic                 NSLocalizedString(@"classical", @"Classic")
+/* 重金属 */
+#define MEL_HeavyMetal              NSLocalizedString(@"Heavy_metals", @"Heavy metal")
+/* 正在播放 */
+#define MEL_NowPlaying              NSLocalizedString(@"Now Playing", @"Now Playing")
+/* 自定义 */
+#define MEL_Customize               NSLocalizedString(@"Customize", @"Customize")
+/* 返回 */
+#define MEL_Back                    NSLocalizedString(@"Back_lu", @"Back")
+/* 提示信息 */
+#define MEL_Prompt                  NSLocalizedString(@"title", @"Prompt")
+/* 要播放的媒体文件不存在 */
+#define MEL_NotExist                NSLocalizedString(@"Media file doesn't exist", @"Media file doesn't exist")
+/* 无音乐 */
+#define MEL_NoMusic                 NSLocalizedString(@"No Music", @"No Music")
+/* 保存成功 */
+#define MEL_SaveSuccess             NSLocalizedString(@"Save_success_", @"Saved Successfully")
+/* 确认删除 */
+#define MEL_deleteSure              NSLocalizedString(@"Are you sure to Delete it", @"Sure to delete?")
+/* iTuns同步 */
+#define MEL_iTunsSyn                NSLocalizedString(@"iTunesSynKey", @"iTunes Sync")
+/* 当前应用没有此权限，是否前往设置权限*/
+#define MEL_SetToAuthorization      NSLocalizedString(@"setting.permissions", @"No permission in current app,wether go to settings?")
+/* 同步iPod音乐库 */
+#define MEL_iPodSyn                 NSLocalizedString(@"Sync with music library", @"Sync with music library")
+
+//找不到WIFI连接
+#define MEL_WifiNOConnection        NSLocalizedString(@"Wifi: No Connection!", @"Wifi: No Connection!")
+/* WiFi传输 */
+#define MEL_WiFiTransfer            NSLocalizedString(@"WiFi_Transfer", @"WiFi Transfer")
+/* 传输 */
+#define MEL_Transfer                NSLocalizedString(@"Transfer", @"Transfer")
+/* 停止 */
+#define MEL_Stop                    NSLocalizedString(@"Stop", @"Stop")
+/* 帮助 */
+#define MEL_Help                    NSLocalizedString(@"Help", @"Help")
+/* 手机与电脑必须连接同一WiFi */
+#define MEL_MustConnectSameWiFi     NSLocalizedString(@"BB_Phone and Computer must connect to a same WiFi network", @"Phone and Computer must connect to the same WiFi network")
+/* 当前手机所处WiFi网络:%@ */
+#define MEL_CurrentNetwork          NSLocalizedString(@"BB_Current connected network:%@", @"Current connected network:%@")
+/* 请在连接此WiFi的电脑的浏览器中输入如下网址： */
+#define MEL_EnterURL                NSLocalizedString(@"BB_Please enter the url in browser of the comptuer connecting to the same WLAN", @"Please enter the URL  below in computer browser:")
+/* 传输过程中请不要离开此页面，且不要关闭电脑上的浏览器。 */
+#define MEL_DontLeave               NSLocalizedString(@"Don't leave this page or close computer browser in transfer.", @"Don't leave this page or close computer browser during transfer")
+/* 上传文件 */
+#define MEL_UploadFiles             NSLocalizedString(@"Upload_Files", @"Upload Files")
+/* 创建新文件夹 */
+#define MEL_CreateFolder            NSLocalizedString(@"Create new folder", @"Create new folder")
+/* 刷新 */
+#define MEL_Refresh                 NSLocalizedString(@"Refresh", @"Refresh")
+/* 文件上传中 */
+#define MEL_Uploading               NSLocalizedString(@"File Uploads in Progress.", @"Uploading")
+/* 请输入新建文件夹的名字： */
+#define MEL_EnterNewFolderName      NSLocalizedString(@"Please enter the name of the folder to be created:", @"Please enter new folder name")
+/* 移动项目 */
+#define MEL_MoveItem                NSLocalizedString(@"Move Item", @"Move Item")
+/* 请输入要移动到的位置： */
+#define MEL_NewLocationMove         NSLocalizedString(@"Please enter the new location for this item:", @"Please enter the new location to move:")
+/* 拖拽文件到此窗口或使用"%@"按钮上传文件 */
+#define MEL_DragFiles               NSLocalizedString(@"Drag and drop files on this window or use the \"%@\" button to upload new file", @"Drag and drop files on this window or tap the button \"%@\" to upload new files")
+/* 停止传输 */
+#define MEL_StopTransfers           NSLocalizedString(@"Stop transfers", @"Stop transfers")
+/* 开始传输 */
+#define MEL_StartTransfers          NSLocalizedString(@"Start transfers", @"Start transfers")
+

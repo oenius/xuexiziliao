@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDClothesViewController">
+            <connections>
+                <outlet property="bottomCon" destination="qtx-wt-Pnr" id="jbY-7m-enX"/>
+                <outlet property="clothesEraseView" destination="1zU-Aa-wQz" id="ELV-UA-wkU"/>
+                <outlet property="contentView" destination="M7a-QW-I5O" id="6k1-hz-be6"/>
+                <outlet property="eraseBtn" destination="i9J-wU-Xht" id="Mme-Nc-UGS"/>
+                <outlet property="menClothesBtn" destination="6Nm-ZI-qMH" id="gEp-Cz-klh"/>
+                <outlet property="menClothesView" destination="3I1-gI-4c4" id="M6r-bg-iav"/>
+                <outlet property="menViewWidth" destination="kYO-Ts-H9c" id="FDa-zD-0Qc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="womeClothesView" destination="aj1-oq-oYX" id="O1x-G7-0LI"/>
+                <outlet property="womenClothesBtn" destination="2vj-Ji-CV3" id="KVo-ua-7bl"/>
+                <outlet property="womenViewWidth" destination="MwS-35-CgX" id="DVo-MG-Tme"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K83-SW-KYE">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vj-Ji-CV3">
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="女装">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="border">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="womenClothesClick:" destination="-1" eventType="touchUpInside" id="ARS-JX-Vlv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9J-wU-Xht">
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="擦除">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="border">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="eraseBtnClick:" destination="-1" eventType="touchUpInside" id="koi-uG-yFR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nm-ZI-qMH">
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="男装">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="border">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menClothesClick:" destination="-1" eventType="touchUpInside" id="zaB-OJ-lBL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.1803921568627451" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="2vj-Ji-CV3" firstAttribute="width" secondItem="6Nm-ZI-qMH" secondAttribute="width" id="1BI-cz-OHH"/>
+                        <constraint firstItem="i9J-wU-Xht" firstAttribute="leading" secondItem="2vj-Ji-CV3" secondAttribute="trailing" id="AFC-qd-t9C"/>
+                        <constraint firstItem="6Nm-ZI-qMH" firstAttribute="top" secondItem="K83-SW-KYE" secondAttribute="top" id="I8F-oX-SH0"/>
+                        <constraint firstAttribute="height" constant="40" id="Ip6-7z-8dJ"/>
+                        <constraint firstItem="6Nm-ZI-qMH" firstAttribute="leading" secondItem="K83-SW-KYE" secondAttribute="leading" id="Kye-tb-LNY"/>
+                        <constraint firstItem="i9J-wU-Xht" firstAttribute="top" secondItem="K83-SW-KYE" secondAttribute="top" id="Mcu-rS-s6v"/>
+                        <constraint firstItem="2vj-Ji-CV3" firstAttribute="leading" secondItem="6Nm-ZI-qMH" secondAttribute="trailing" id="ULT-U7-gSY"/>
+                        <constraint firstAttribute="bottom" secondItem="6Nm-ZI-qMH" secondAttribute="bottom" id="XDe-Bf-7ye"/>
+                        <constraint firstAttribute="bottom" secondItem="i9J-wU-Xht" secondAttribute="bottom" id="fwP-Ai-us7"/>
+                        <constraint firstAttribute="trailing" secondItem="i9J-wU-Xht" secondAttribute="trailing" id="hGa-Ir-CZV"/>
+                        <constraint firstAttribute="bottom" secondItem="2vj-Ji-CV3" secondAttribute="bottom" id="iea-Fd-b70"/>
+                        <constraint firstItem="2vj-Ji-CV3" firstAttribute="top" secondItem="K83-SW-KYE" secondAttribute="top" id="ngX-vj-uwO"/>
+                        <constraint firstItem="i9J-wU-Xht" firstAttribute="leading" secondItem="2vj-Ji-CV3" secondAttribute="trailing" id="peQ-2z-N0h"/>
+                        <constraint firstItem="i9J-wU-Xht" firstAttribute="width" secondItem="6Nm-ZI-qMH" secondAttribute="width" id="up5-Bg-XYv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I1-gI-4c4" customClass="IDMenClothesView">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="kYO-Ts-H9c"/>
+                        <constraint firstAttribute="height" constant="80" id="qbG-kb-Ntv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aj1-oq-oYX" customClass="IDWomenClothesView">
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="MwS-35-CgX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zU-Aa-wQz" customClass="IDClotehsEraseView">
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-QW-I5O">
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.1803921568627451" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6r8-eg-aaZ">
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.17254901960784313" green="0.1803921568627451" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aj1-oq-oYX" firstAttribute="leading" secondItem="3I1-gI-4c4" secondAttribute="trailing" id="4Ai-ra-CRU"/>
+                <constraint firstItem="aj1-oq-oYX" firstAttribute="centerY" secondItem="3I1-gI-4c4" secondAttribute="centerY" id="Cqe-nV-m4u"/>
+                <constraint firstItem="6r8-eg-aaZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DhA-gJ-Hud"/>
+                <constraint firstAttribute="trailing" secondItem="M7a-QW-I5O" secondAttribute="trailing" constant="10" id="Ex3-f2-9Be"/>
+                <constraint firstItem="K83-SW-KYE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IaJ-l1-xOB"/>
+                <constraint firstItem="aj1-oq-oYX" firstAttribute="top" secondItem="K83-SW-KYE" secondAttribute="bottom" constant="1" id="Oze-g4-wqu"/>
+                <constraint firstAttribute="trailing" secondItem="6r8-eg-aaZ" secondAttribute="trailing" id="SWP-96-W0Q"/>
+                <constraint firstAttribute="trailing" secondItem="1zU-Aa-wQz" secondAttribute="trailing" id="SbB-R9-o6u"/>
+                <constraint firstItem="1zU-Aa-wQz" firstAttribute="leading" secondItem="aj1-oq-oYX" secondAttribute="trailing" id="TNv-Ib-NWz"/>
+                <constraint firstItem="3I1-gI-4c4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WLk-HV-jNc"/>
+                <constraint firstItem="1zU-Aa-wQz" firstAttribute="top" secondItem="6r8-eg-aaZ" secondAttribute="bottom" id="bTr-5R-5qg"/>
+                <constraint firstItem="1zU-Aa-wQz" firstAttribute="centerY" secondItem="aj1-oq-oYX" secondAttribute="centerY" id="ejc-Yf-ktH"/>
+                <constraint firstItem="K83-SW-KYE" firstAttribute="top" secondItem="M7a-QW-I5O" secondAttribute="bottom" constant="10" id="fdM-dW-961"/>
+                <constraint firstItem="aj1-oq-oYX" firstAttribute="height" secondItem="3I1-gI-4c4" secondAttribute="height" id="h6t-0b-bjf"/>
+                <constraint firstItem="1zU-Aa-wQz" firstAttribute="height" secondItem="aj1-oq-oYX" secondAttribute="height" id="i8U-9R-Moo"/>
+                <constraint firstAttribute="bottom" secondItem="3I1-gI-4c4" secondAttribute="bottom" id="qtx-wt-Pnr"/>
+                <constraint firstItem="6r8-eg-aaZ" firstAttribute="top" secondItem="K83-SW-KYE" secondAttribute="bottom" id="rn9-iX-xQC"/>
+                <constraint firstAttribute="trailing" secondItem="K83-SW-KYE" secondAttribute="trailing" id="tAG-p4-2kN"/>
+                <constraint firstItem="M7a-QW-I5O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="uuB-vj-Ht2"/>
+                <constraint firstItem="M7a-QW-I5O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="wFf-7G-OhG"/>
+            </constraints>
+            <point key="canvasLocation" x="-530.5" y="-237.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="border" width="125" height="40"/>
+    </resources>
+</document>

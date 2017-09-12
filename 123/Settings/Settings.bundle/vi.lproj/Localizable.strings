@@ -1,0 +1,61 @@
+
+/* 通用 */
+"General" = "Thông thường";
+
+/* 邮件发送成功 */
+"email.send email successful" = "Gửi email thành công";
+
+/* 邮件发送失败 */
+"email.send email failed" = "Không gửi được Email";
+
+/* 确定 */
+"Sure" = "OK";
+
+/* 升级到专业版 */
+"Upgrade to Pro Version" = "Nâng cấp phiên bản Pro";
+
+/* 意见反馈 */
+"Suggections" = "Ý kiến phản hồi";
+
+/* 操作成功 */
+"common.Operating Successed" = "Thành công";
+
+/* 设置 */
+"user.Settings" = "Cài đặt";
+
+/* 移除广告 */
+"Remove Ads" = "Gỡ bỏ quảng cáo";
+
+/* 给我们评分 */
+"setting.comment" = "Đánh giá chúng tôi";
+
+/* 失败 */
+"task.fail" = "Thất bại";
+
+/* 无法发送邮件，您需要激活邮件服务！ */
+"sendPhoto.System messages was unable to send the email.Please esnure that the email account is valid." = "Không thể gửi E-mail, bạn cần kích hoạt dịch vụ thư điện tử.";
+
+/* More Apps*/
+"More Apps" = "Nhiều ứng dụng khác";
+
+"Payment prompt message" = "Nếu thích sử dụng %@, Tải về phiên bản không quảng cáo để trải nghiệm tính năng";
+
+/* 评论即可解锁。 */
+"massage,rate to unlock the function." = "Đánh giá trên App Store để mở khóa các chức năng?";
+
+/* 评论 */
+"common.comment" = "Bình luận";
+
+/* 广告 */
+"ads" = "Quảng cáo";
+
+"Watch the video for a better experience" = "Xem video để có trải nghiệm tốt hơn";
+
+"Watch a video to support us" = "Xem video để hỗ trợ chúng tôi";
+
+"Watch a video to unlock" = "Xem video để mở khóa";
+
+/* 请去评分支持我们，即可流畅的使用功能。感谢您的支持！ */
+"Please rate to support us, you can smooth the use of function. thank you for your support!" = "Vui lòng đánh giá chúng tôi để có được chức năng trơn tru hơn. Cảm ơn bạn đã hỗ trợ của bạn";
+
+

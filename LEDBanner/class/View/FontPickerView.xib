@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FontPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2C-YM-r2i">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCI-fV-A7T">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="e8U-wQ-syH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onCancelBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="57g-kw-Khn"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-DJ-mK2"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abc&amp;ABC&amp;123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="2eS-Nh-9gI">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="sMU-X6-Nrf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CA-Zm-T7Z">
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0mQ-8b-XQN"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="fAL-Wj-HGA"/>
+                                <constraint firstAttribute="width" constant="60" id="tUH-V7-YmD"/>
+                                <constraint firstAttribute="height" constant="30" id="tkg-O9-D0z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0mQ-8b-XQN"/>
+                                    <exclude reference="fAL-Wj-HGA"/>
+                                    <exclude reference="tUH-V7-YmD"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="onDoneBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="4wS-BC-Juh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JbI-DJ-mK2" firstAttribute="leading" secondItem="t2C-YM-r2i" secondAttribute="leading" id="9sJ-hI-vEL"/>
+                        <constraint firstAttribute="bottom" secondItem="JbI-DJ-mK2" secondAttribute="bottom" id="BBL-py-zlC"/>
+                        <constraint firstItem="2eS-Nh-9gI" firstAttribute="top" secondItem="DCI-fV-A7T" secondAttribute="bottom" constant="5" id="EOb-Yd-qME"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="JS2-tA-x9g"/>
+                        <constraint firstAttribute="trailing" secondItem="2eS-Nh-9gI" secondAttribute="trailing" constant="10" id="Ja4-Zs-MrE"/>
+                        <constraint firstItem="DCI-fV-A7T" firstAttribute="leading" secondItem="t2C-YM-r2i" secondAttribute="leading" constant="10" id="N0u-yQ-y7N"/>
+                        <constraint firstItem="DCI-fV-A7T" firstAttribute="width" relation="lessThanOrEqual" secondItem="t2C-YM-r2i" secondAttribute="width" multiplier="0.5" constant="-20" id="QKa-L4-JCs"/>
+                        <constraint firstAttribute="trailing" secondItem="JbI-DJ-mK2" secondAttribute="trailing" id="UX0-eg-vB9"/>
+                        <constraint firstItem="DCI-fV-A7T" firstAttribute="top" secondItem="t2C-YM-r2i" secondAttribute="top" constant="10" id="Uik-6h-gVn"/>
+                        <constraint firstItem="8CA-Zm-T7Z" firstAttribute="top" secondItem="t2C-YM-r2i" secondAttribute="top" constant="10" id="ddK-6F-IW2"/>
+                        <constraint firstItem="8CA-Zm-T7Z" firstAttribute="width" relation="lessThanOrEqual" secondItem="t2C-YM-r2i" secondAttribute="width" multiplier="0.5" constant="-20" id="mfN-tE-XUS"/>
+                        <constraint firstItem="JbI-DJ-mK2" firstAttribute="top" secondItem="2eS-Nh-9gI" secondAttribute="bottom" id="nOl-5d-Ntx"/>
+                        <constraint firstAttribute="height" constant="300" id="nZN-kK-hsW"/>
+                        <constraint firstAttribute="trailing" secondItem="8CA-Zm-T7Z" secondAttribute="trailing" constant="10" id="qe9-ui-pOq"/>
+                        <constraint firstItem="2eS-Nh-9gI" firstAttribute="leading" secondItem="t2C-YM-r2i" secondAttribute="leading" constant="10" id="ytv-r3-ct1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JS2-tA-x9g"/>
+                            <exclude reference="nZN-kK-hsW"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t2C-YM-r2i" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="5Me-4c-FJO"/>
+                <constraint firstAttribute="trailing" secondItem="t2C-YM-r2i" secondAttribute="trailing" constant="30" id="5Un-VT-YKE"/>
+                <constraint firstItem="t2C-YM-r2i" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RYi-ZX-4Ek"/>
+                <constraint firstItem="t2C-YM-r2i" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" id="bpa-nN-53K"/>
+                <constraint firstItem="t2C-YM-r2i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="wqt-au-DI1"/>
+                <constraint firstItem="t2C-YM-r2i" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xtM-W3-ZUm"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="5Un-VT-YKE"/>
+                    <exclude reference="wqt-au-DI1"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancleBtn" destination="DCI-fV-A7T" id="3d9-dE-Cdr"/>
+                <outlet property="contentView" destination="t2C-YM-r2i" id="Ibl-TC-tLM"/>
+                <outlet property="doneBtn" destination="8CA-Zm-T7Z" id="ky7-Eo-771"/>
+                <outlet property="pickerView" destination="JbI-DJ-mK2" id="0VC-b9-S9i"/>
+                <outlet property="textLabel" destination="2eS-Nh-9gI" id="X1h-pm-0pn"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="95"/>
+        </view>
+    </objects>
+</document>

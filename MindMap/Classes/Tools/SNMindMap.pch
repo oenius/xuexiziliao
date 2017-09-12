@@ -1,0 +1,61 @@
+//
+//  SNMindMap.pch
+//  MindMap
+//
+//  Created by 何少博 on 2017/8/7.
+//  Copyright © 2017年 H0oo0H. All rights reserved.
+//
+
+#ifndef SNMindMap_pch
+#define SNMindMap_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SNMindMap_pch */
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(@"%s-[%d]-%@",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define NSLog(...)
+#endif
+
+#import <UIKit/UIKit.h>
+
+//// some helper declarations
+//#define _nob_macro_concat(a, b) a##b
+//#define nob_macro_concat(a, b) _nob_macro_concat(a, b)
+//typedef void(^nob_defer_block_t)();
+//NS_INLINE void nob_deferFunc(__strong nob_defer_block_t *blockRef)
+//{
+//    nob_defer_block_t actualBlock = *blockRef;
+//    actualBlock();
+//}
+//
+//// the core macro
+//#define nob_defer(deferBlock) \
+//__strong nob_defer_block_t nob_macro_concat(__nob_stack_defer_block_, __LINE__) __attribute__((cleanup(nob_deferFunc), unused)) = deferBlock
+
+
+
+#define MAX_HEIGHT_OF_IAMGE                     150
+#define MIND_NODE_HAND_LENGTH                   65
+#define MIND_NODE_MARGIN                        5
+#define DISTANCE_BETWEEN_TEXT_AND_IMAGE         4
+#define CLOSE_BUTTON_SIZE                       15
+#define TIP_IMAGE_SIZE                          30
+
+#define kSNNodeViewDidMoveToSuperView           @"c4af3a2e11926616089db0ea90c51465"
+#define kSNNodeViewDidRemoveFromSuperView       @"b97a8fbffaf2b98eee2b47a61888663e"
+#define kSNNodeViewBeenRefreshNotification      @"5d1cb48b60f8c03a6c6d4b791e6c915c"
+#define kSNNodeViewStatusChangedNotification    @"e104941bbbb514b6fdabf52d2d7fff0e"
+#define kSNNodeViewCloseChangedNotification     @"7t4635jkbvcb982te7allhgf7w394ub0"
+#define kSNMindFilePathDidChangedNotification   @"903jbvbho093e7t-823nkjf09y83rbhe"
+#define kSNMindMapAppIcloudStatusNotification   @"iha9ewghfi0-90ewy78fguiefjishush"
+
+#define MAIN_NODE_SIZE                          CGSizeMake(80, 50)
+#define CHILD_NODE_SIZE                         CGSizeMake(60, 35)
+#define LINE_WIDTH                              2
+
+#import "SNTools.h"
+#import "SNiCloudTool.h"

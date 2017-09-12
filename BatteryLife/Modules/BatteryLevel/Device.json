@@ -1,0 +1,187 @@
+{
+    "name": "iPhone设备硬件信息",
+    "list": [
+             {
+             "device_no": "0",
+             "device_name":"Unknown",
+             "battery_capacity": "0mAh",
+             "ramdom_access_memory": "0MB"
+             },
+             {
+             "device_no": "1000",
+             "device_name":"iPhone 4",
+             "battery_capacity": "1420mAh",
+             "ramdom_access_memory": "512MB"
+             },
+             {
+             "device_no": "1001",
+             "device_name":"iPhone 4s",
+             "battery_capacity": "1470mAh",
+             "ramdom_access_memory": "512MB"
+             },
+             {
+             "device_no": "1002",
+             "device_name":"iPhone 5",
+             "battery_capacity": "1440mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1003",
+             "device_name":"iPhone 5c",
+             "battery_capacity": "1507mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1004",
+             "device_name":"iPhone 5s",
+             "battery_capacity": "1560mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1005",
+             "device_name":"iPhone 5se",
+             "battery_capacity": "1560mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1006",
+             "device_name":"iPhone 6",
+             "battery_capacity": "1810mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1007",
+             "device_name":"iPhone 6 Plus",
+             "battery_capacity": "2915mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1008",
+             "device_name":"iPhone 6s",
+             "battery_capacity": "1715mAh",
+             "ramdom_access_memory": "2GB"
+             },
+             {
+             "device_no": "1009",
+             "device_name":"iPhone 6s Plus",
+             "battery_capacity": "2750mAh",
+             "ramdom_access_memory": "2GB"
+             },
+             {
+             "device_no": "1009",
+             "device_name":"iPhone SE",
+             "battery_capacity": "1642mAh",
+             "ramdom_access_memory": "2GB"
+             },
+             {
+             "device_no": "1010",
+             "device_name":"iPhone 7",
+             "battery_capacity": "1960mAh",
+             "ramdom_access_memory": "2GB"
+             },
+             {
+             "device_no": "1011",
+             "device_name":"iPhone 7 Plus",
+             "battery_capacity": "2900mAh",
+             "ramdom_access_memory": "2GB"
+             },
+             {
+             "device_no": "1012",
+             "device_name":"iPod Touch 4G",
+             "battery_capacity": "1043mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1013",
+             "device_name":"iPod Touch 5G",
+             "battery_capacity": "1043mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1012",
+             "device_name":"iPod Touch 6G",
+             "battery_capacity": "1043mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1013",
+             "device_name":"iPad 1G",
+             "battery_capacity": "6930mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1014",
+             "device_name":"iPad 2",
+             "battery_capacity": "6930mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1015",
+             "device_name":"iPad Mini 1G",
+             "battery_capacity": "4440mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1016",
+             "device_name":"iPad 3",
+             "battery_capacity": "11666mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1017",
+             "device_name":"iPad 4",
+             "battery_capacity": "11560mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1018",
+             "device_name":"iPad Air",
+             "battery_capacity": "8827mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1019",
+             "device_name":"iPad Air 2",
+             "battery_capacity": "7340mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1019",
+             "device_name":"iPad Mini 1G",
+             "battery_capacity": "4440mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1020",
+             "device_name":"iPad Mini 2G",
+             "battery_capacity": "6000mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1021",
+             "device_name":"iPad Mini 3G",
+             "battery_capacity": "6000mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1022",
+             "device_name":"iPad Mini 4G",
+             "battery_capacity": "5124mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1023",
+             "device_name":"iPad Pro (9.7 inch)",
+             "battery_capacity": "7306mAh",
+             "ramdom_access_memory": "1GB"
+             },
+             {
+             "device_no": "1024",
+             "device_name":"iPad Pro (12.9 inch)",
+             "battery_capacity": "10307mAh",
+             "ramdom_access_memory": "1GB"
+             }
+             
+             
+             ]
+}

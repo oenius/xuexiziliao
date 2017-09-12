@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PotoContentView">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="C4o-8N-VKo">
+                    <rect key="frame" x="121" y="35" width="250" height="31"/>
+                    <connections>
+                        <action selector="baoheDuSliderTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="uTq-8i-t01"/>
+                    </connections>
+                </slider>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GTk-ks-aur">
+                    <rect key="frame" x="0.0" y="110" width="492" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4aa-bV-Z5k"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NiV-H7-uPH">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zBB-Sf-Qg4">
+                    <rect key="frame" x="121" y="35" width="250" height="31"/>
+                    <connections>
+                        <action selector="liangDuSliderTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="FTS-Ue-09Z"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aR4-PS-vx5">
+                    <rect key="frame" x="121" y="35" width="250" height="31"/>
+                    <connections>
+                        <action selector="maoaBoLiValueChange:" destination="iN0-l3-epB" eventType="touchUpInside" id="RFq-aa-GVQ"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-dn-Nbz">
+                    <rect key="frame" x="121" y="35" width="250" height="31"/>
+                    <connections>
+                        <action selector="duiBiDuSliderTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="AZ4-Ao-CNE"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GTk-ks-aur" secondAttribute="bottom" id="25b-IJ-mvI"/>
+                <constraint firstItem="C4o-8N-VKo" firstAttribute="centerX" secondItem="aR4-PS-vx5" secondAttribute="centerX" id="5ux-AQ-HHC"/>
+                <constraint firstItem="aR4-PS-vx5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="8J3-23-jJk"/>
+                <constraint firstItem="eTc-dn-Nbz" firstAttribute="centerX" secondItem="aR4-PS-vx5" secondAttribute="centerX" id="FyZ-6g-6fq"/>
+                <constraint firstItem="aR4-PS-vx5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GWM-FW-YfJ"/>
+                <constraint firstItem="C4o-8N-VKo" firstAttribute="width" secondItem="aR4-PS-vx5" secondAttribute="width" id="KyE-pL-cUo"/>
+                <constraint firstItem="eTc-dn-Nbz" firstAttribute="width" secondItem="aR4-PS-vx5" secondAttribute="width" id="Qs9-m3-G2a"/>
+                <constraint firstAttribute="trailing" secondItem="GTk-ks-aur" secondAttribute="trailing" id="X1K-X4-yRQ"/>
+                <constraint firstItem="zBB-Sf-Qg4" firstAttribute="centerY" secondItem="aR4-PS-vx5" secondAttribute="centerY" id="b7l-U9-eby"/>
+                <constraint firstItem="eTc-dn-Nbz" firstAttribute="centerY" secondItem="aR4-PS-vx5" secondAttribute="centerY" id="bO5-sw-q5H"/>
+                <constraint firstItem="C4o-8N-VKo" firstAttribute="centerY" secondItem="aR4-PS-vx5" secondAttribute="centerY" id="jOn-mq-Gzn"/>
+                <constraint firstItem="GTk-ks-aur" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tVA-Kk-1JV"/>
+                <constraint firstItem="zBB-Sf-Qg4" firstAttribute="centerX" secondItem="aR4-PS-vx5" secondAttribute="centerX" id="tpk-p1-kK5"/>
+                <constraint firstItem="zBB-Sf-Qg4" firstAttribute="width" secondItem="aR4-PS-vx5" secondAttribute="width" id="ucm-7W-3rU"/>
+                <constraint firstItem="aR4-PS-vx5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="x6F-e1-vRa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="baoHeDuSlider" destination="C4o-8N-VKo" id="IEF-u1-ZmZ"/>
+                <outlet property="collectionView" destination="GTk-ks-aur" id="gC4-y6-1Hm"/>
+                <outlet property="duiBiDuSlider" destination="eTc-dn-Nbz" id="yT0-n1-9yB"/>
+                <outlet property="liangDuSlider" destination="zBB-Sf-Qg4" id="E0V-aI-bGJ"/>
+                <outlet property="maoBoLiSlider" destination="aR4-PS-vx5" id="4Mq-xn-CTp"/>
+            </connections>
+            <point key="canvasLocation" x="447" y="301"/>
+        </view>
+    </objects>
+</document>

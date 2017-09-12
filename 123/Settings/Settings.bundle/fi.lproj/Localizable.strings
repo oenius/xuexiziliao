@@ -1,0 +1,51 @@
+
+/* 通用 */
+"General" = "Yleinen";
+
+/* 邮件发送成功 */
+"email.send email successful" = "Sähköpostin lähettäminen onnistui";
+
+/* 邮件发送失败 */
+"email.send email failed" = "Sähköpostin lähetys epäonnistui";
+
+/* 确定 */
+"Sure" = "OK";
+
+/* 升级到专业版 */
+"Upgrade to Pro Version" = "Päivitä Pro Version";
+
+/* 意见反馈 */
+"Suggections" = "Palaute";
+
+/* 操作成功 */
+"common.Operating Successed" = "Onnistui";
+
+/* 设置 */
+"user.Settings" = "Asetukset";
+
+/* 移除广告 */
+"Remove Ads" = "Poista mainokset";
+
+/* 给我们评分 */
+"setting.comment" = "Arvioi meidät";
+
+/* 失败 */
+"task.fail" = "Epäonnistui";
+
+/* 无法发送邮件，您需要激活邮件服务！ */
+"sendPhoto.System messages was unable to send the email.Please esnure that the email account is valid." = "Sähköpostin lähettäminen ei onnistu. Aktivoi sähköpostipalvelusi.";
+
+/* More Apps*/
+"More Apps" = "Lisää sovelluksia";
+
+/* 评论即可解锁。 */
+"massage,rate to unlock the function." = "Arvostele sovelluskaupassa avataksesi toiminnon?";
+
+/* 评论 */
+"common.comment" = "Kommentit";
+
+/* 广告 */
+"ads" = "Ilmoitukset";
+
+"Watch a video to unlock" = "Katso video avata";
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleCompressViewController" customModule="VideoCompress" customModuleProvider="target">
+            <connections>
+                <outlet property="bitRateSlider" destination="zq6-8e-G41" id="zMx-qe-7LA"/>
+                <outlet property="complessSizeTitleLabel" destination="bwb-I3-xzi" id="XqV-24-SC3"/>
+                <outlet property="compressSizeLabel" destination="BSb-06-Sc4" id="xYx-W2-pdI"/>
+                <outlet property="orignSizeLabel" destination="mct-zI-Ebr" id="49E-8e-7V7"/>
+                <outlet property="orignSizeTitleLabel" destination="xlk-s8-zZM" id="TkM-0u-cyh"/>
+                <outlet property="playContentView" destination="brz-1H-I7X" id="MHD-sv-rzb"/>
+                <outlet property="sliderBottom" destination="Bgb-Oh-YBl" id="FKq-u6-Gxx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-8e-G41">
+                    <connections>
+                        <action selector="compressSliderValueChanged:" destination="-1" eventType="valueChanged" id="gMj-X8-fym"/>
+                    </connections>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6S-6p-zFW">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xlk-s8-zZM">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mct-zI-Ebr">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-I3-xzi">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIY-Dj-xmc">
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="COB-8f-5Ln"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BSb-06-Sc4">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.77705536912751683" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mct-zI-Ebr" firstAttribute="leading" secondItem="xlk-s8-zZM" secondAttribute="trailing" id="8Ve-2t-0VU"/>
+                        <constraint firstItem="zIY-Dj-xmc" firstAttribute="centerX" secondItem="o6S-6p-zFW" secondAttribute="centerX" id="GLE-h1-6Oc"/>
+                        <constraint firstItem="xlk-s8-zZM" firstAttribute="leading" secondItem="o6S-6p-zFW" secondAttribute="leading" id="KAg-Tc-Cu0"/>
+                        <constraint firstItem="bwb-I3-xzi" firstAttribute="leading" secondItem="o6S-6p-zFW" secondAttribute="leading" id="NZF-kv-Jk8"/>
+                        <constraint firstItem="BSb-06-Sc4" firstAttribute="centerY" secondItem="bwb-I3-xzi" secondAttribute="centerY" id="ZmB-Dd-mNx"/>
+                        <constraint firstItem="BSb-06-Sc4" firstAttribute="leading" secondItem="bwb-I3-xzi" secondAttribute="trailing" id="bMu-aG-dLF"/>
+                        <constraint firstItem="zIY-Dj-xmc" firstAttribute="centerY" secondItem="o6S-6p-zFW" secondAttribute="centerY" id="eux-bI-biN"/>
+                        <constraint firstItem="mct-zI-Ebr" firstAttribute="centerY" secondItem="xlk-s8-zZM" secondAttribute="centerY" id="f1s-gy-h4O"/>
+                        <constraint firstItem="bwb-I3-xzi" firstAttribute="top" secondItem="zIY-Dj-xmc" secondAttribute="bottom" constant="5" id="fMN-Dm-V7e"/>
+                        <constraint firstItem="zIY-Dj-xmc" firstAttribute="top" secondItem="xlk-s8-zZM" secondAttribute="bottom" id="k0F-mM-Xvz"/>
+                        <constraint firstItem="zIY-Dj-xmc" firstAttribute="width" secondItem="o6S-6p-zFW" secondAttribute="width" id="zMb-UK-xDp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brz-1H-I7X" customClass="VideoPlayerView" customModule="VideoCompress" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.72281354865771807" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zq6-8e-G41" firstAttribute="top" secondItem="o6S-6p-zFW" secondAttribute="bottom" constant="10" id="35b-UU-nfU"/>
+                <constraint firstAttribute="trailing" secondItem="zq6-8e-G41" secondAttribute="trailing" constant="20" id="7Gw-Yq-9vv"/>
+                <constraint firstItem="o6S-6p-zFW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.15" id="9Gb-Ds-DPL"/>
+                <constraint firstAttribute="bottom" secondItem="zq6-8e-G41" secondAttribute="bottom" constant="20" id="Bgb-Oh-YBl"/>
+                <constraint firstItem="brz-1H-I7X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FvD-wG-YWh"/>
+                <constraint firstAttribute="trailing" secondItem="brz-1H-I7X" secondAttribute="trailing" id="IbZ-Pp-mfS"/>
+                <constraint firstItem="o6S-6p-zFW" firstAttribute="top" secondItem="brz-1H-I7X" secondAttribute="bottom" constant="10" id="WPe-lX-Ppi"/>
+                <constraint firstItem="zq6-8e-G41" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dXj-bb-7J1"/>
+                <constraint firstItem="o6S-6p-zFW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="kNf-hH-1OE"/>
+                <constraint firstAttribute="trailing" secondItem="o6S-6p-zFW" secondAttribute="trailing" constant="20" id="oIQ-MY-6UP"/>
+                <constraint firstItem="brz-1H-I7X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wmT-NX-6w7"/>
+            </constraints>
+            <point key="canvasLocation" x="-89" y="-52"/>
+        </view>
+    </objects>
+</document>

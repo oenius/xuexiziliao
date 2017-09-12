@@ -1,0 +1,45 @@
+/* 购买 */
+"Buy" = "Acheter";
+
+/* 商品信息 */
+"Product info" = "Fiche Produit";
+
+/* 价格 */
+"Price" = "Prix";
+
+/* 描述 */
+"Description" = "Description";
+
+/* 恢复 */
+"Restore" = "Restaurer";
+
+/* 请求商品信息... */
+"Requesting for product info..." = "Demande de Fiche Produit…";
+
+/* 提示信息 */
+"Remind info" = "Rappel";
+
+/* 取消 */
+"cancel" = "Annuler";
+
+/* 移除广告成功! */
+"key.Remove advertising success" = "Suppression de pubs avec succès !";
+
+/* 失败 */
+"task.fail" = "Échec";
+
+/* 恢复购买 */
+"Restore.Purchase" = "Restaurer l'achat";
+
+/* 没有广告，完美体验 */
+"No ads for perfect experience" = "Aucune publicité pour une expérience parfaite";
+
+/* 抱歉，此功能仅在专业版中可用，您是否要升级到专业版？ */
+"locked for go pro version message" = "Désolé. Cette fonction est uniquement disponible sur la version Pro. Souhaitez-vous mettre à jour votre version pour la Version Pro maintenant ?";
+
+"Remove ad or upgrade to pro version fro a better experience." = "Supprimer la publicité ou passer à la version pro pour une meilleure expérience";
+
+
+"DK_dialog_title_net_error" = "Aucune connexion au réseau détectée, veuillez vérifier et réessayer plus tard";
+
+"The purchase failed. Please try again later" = "L'achat a échoué. Veuillez réessayer plus tard.";

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IDDaYanView">
+            <rect key="frame" x="0.0" y="0.0" width="717" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVQ-MT-nTV">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Lqr-2Q-KFD"/>
+                        <constraint firstAttribute="width" constant="40" id="hlw-Mx-kSV"/>
+                    </constraints>
+                    <state key="normal" image="cha"/>
+                    <connections>
+                        <action selector="cancleBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Ic-2t-5FB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHb-j2-Jyy">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="9B4-e0-e66"/>
+                        <constraint firstAttribute="height" constant="40" id="giW-Hs-yEL"/>
+                    </constraints>
+                    <state key="normal" image="gou"/>
+                    <connections>
+                        <action selector="doneBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2WD-Bp-kR7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0To-zH-GSG">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0To-zH-GSG" secondAttribute="height" multiplier="2.5" id="D6E-Dd-BM9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" image="zidong"/>
+                    <state key="selected" image="zidong2"/>
+                    <connections>
+                        <action selector="zidongBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="6PT-eb-Ifg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAx-uv-c9R">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" image="shoudong-2"/>
+                    <state key="selected" image="shoudong-"/>
+                    <connections>
+                        <action selector="shoudongBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="wpx-5U-tiF"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPM-ip-lbh">
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gzt-uc-xbc">
+                            <connections>
+                                <action selector="sliderTouchCancel" destination="iN0-l3-epB" eventType="touchCancel" id="KHs-Bn-sCA"/>
+                                <action selector="sliderTouchCancel" destination="iN0-l3-epB" eventType="touchUpOutside" id="OvN-Mt-Ov7"/>
+                                <action selector="sliderTouchCancel" destination="iN0-l3-epB" eventType="touchUpInside" id="T93-Co-68A"/>
+                                <action selector="sliderTouchDown" destination="iN0-l3-epB" eventType="touchDown" id="odx-gk-3kn"/>
+                                <action selector="sliderValueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="nM2-jN-5dc"/>
+                            </connections>
+                        </slider>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Gzt-uc-xbc" secondAttribute="trailing" constant="20" id="3y0-gU-QIQ"/>
+                        <constraint firstItem="Gzt-uc-xbc" firstAttribute="centerX" secondItem="yPM-ip-lbh" secondAttribute="centerX" id="IXn-ve-C9W"/>
+                        <constraint firstItem="Gzt-uc-xbc" firstAttribute="centerY" secondItem="yPM-ip-lbh" secondAttribute="centerY" id="fQa-yf-l9r"/>
+                        <constraint firstItem="Gzt-uc-xbc" firstAttribute="leading" secondItem="yPM-ip-lbh" secondAttribute="leading" constant="20" id="h4A-W0-Usa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CR7-gs-dQP">
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="duM-pG-dLq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yPM-ip-lbh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3D6-Xk-pb5"/>
+                <constraint firstItem="0To-zH-GSG" firstAttribute="centerX" secondItem="yPM-ip-lbh" secondAttribute="centerX" multiplier="0.5" constant="50" id="68Z-4q-IBj"/>
+                <constraint firstItem="XVQ-MT-nTV" firstAttribute="top" secondItem="yPM-ip-lbh" secondAttribute="bottom" constant="5" id="7nu-zS-nu2"/>
+                <constraint firstAttribute="bottom" secondItem="JHb-j2-Jyy" secondAttribute="bottom" constant="5" id="EFu-pf-8Gv"/>
+                <constraint firstItem="CR7-gs-dQP" firstAttribute="centerX" secondItem="yPM-ip-lbh" secondAttribute="centerX" id="HYA-Ab-J3e"/>
+                <constraint firstAttribute="bottom" secondItem="0To-zH-GSG" secondAttribute="bottom" id="PAn-4G-uGc"/>
+                <constraint firstAttribute="trailing" secondItem="yPM-ip-lbh" secondAttribute="trailing" id="Qss-er-qgg"/>
+                <constraint firstAttribute="bottom" secondItem="XVQ-MT-nTV" secondAttribute="bottom" constant="5" id="S2g-MP-0AR"/>
+                <constraint firstItem="HAx-uv-c9R" firstAttribute="height" secondItem="0To-zH-GSG" secondAttribute="height" id="YEg-5D-you"/>
+                <constraint firstItem="HAx-uv-c9R" firstAttribute="width" secondItem="0To-zH-GSG" secondAttribute="width" id="eOy-Q3-Pzn"/>
+                <constraint firstItem="HAx-uv-c9R" firstAttribute="centerX" secondItem="yPM-ip-lbh" secondAttribute="centerX" multiplier="1.5" constant="-50" id="jUc-EV-dhR"/>
+                <constraint firstItem="XVQ-MT-nTV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="lKj-Dh-Sdh"/>
+                <constraint firstAttribute="trailing" secondItem="JHb-j2-Jyy" secondAttribute="trailing" constant="5" id="okf-FM-wft"/>
+                <constraint firstItem="CR7-gs-dQP" firstAttribute="width" secondItem="yPM-ip-lbh" secondAttribute="width" id="pzO-rI-9bi"/>
+                <constraint firstItem="CR7-gs-dQP" firstAttribute="top" secondItem="yPM-ip-lbh" secondAttribute="bottom" id="qFh-LC-j7Y"/>
+                <constraint firstItem="HAx-uv-c9R" firstAttribute="centerY" secondItem="0To-zH-GSG" secondAttribute="centerY" id="wnf-lm-Qcp"/>
+                <constraint firstItem="yPM-ip-lbh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y82-uu-dOM"/>
+                <constraint firstItem="0To-zH-GSG" firstAttribute="top" secondItem="yPM-ip-lbh" secondAttribute="bottom" id="yZh-Ps-xob"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBtn" destination="XVQ-MT-nTV" id="Wvt-K5-68E"/>
+                <outlet property="doneBnt" destination="JHb-j2-Jyy" id="BJ2-el-Fo0"/>
+                <outlet property="shoudongBtn" destination="HAx-uv-c9R" id="ppF-h5-5YP"/>
+                <outlet property="slider" destination="Gzt-uc-xbc" id="Bwn-Lh-xEy"/>
+                <outlet property="zidongBtn" destination="0To-zH-GSG" id="nhF-ta-jeG"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="-196"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cha" width="16" height="16"/>
+        <image name="gou" width="21" height="17"/>
+        <image name="shoudong-" width="23" height="23"/>
+        <image name="shoudong-2" width="23" height="23"/>
+        <image name="zidong" width="26" height="22"/>
+        <image name="zidong2" width="26" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rxG-lQ-XLL" customClass="IDShouLianView">
+            <rect key="frame" x="0.0" y="0.0" width="543" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNx-7f-0Fj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="f7p-1R-NTx"/>
+                        <constraint firstAttribute="width" constant="40" id="kuh-a4-Os1"/>
+                    </constraints>
+                    <state key="normal" image="CA_fanhui.png"/>
+                    <connections>
+                        <action selector="cancleBtnClick:" destination="rxG-lQ-XLL" eventType="touchUpInside" id="3qp-CI-fVs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwh-HV-RNg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eRE-X3-Llc"/>
+                        <constraint firstAttribute="width" constant="40" id="shs-ap-xlw"/>
+                    </constraints>
+                    <state key="normal" image="BG_selected.png"/>
+                    <connections>
+                        <action selector="doneBtnClick:" destination="rxG-lQ-XLL" eventType="touchUpInside" id="RTM-4e-tg9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekw-eR-DX2">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="N4q-8o-lx1"/>
+                        <constraint firstAttribute="width" constant="40" id="Puh-SU-1bt"/>
+                    </constraints>
+                    <state key="normal" title="自动"/>
+                    <connections>
+                        <action selector="zidongBtnClick:" destination="rxG-lQ-XLL" eventType="touchUpInside" id="PiE-CQ-DCu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01q-bv-sOp">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="L6k-gr-JtT"/>
+                        <constraint firstAttribute="height" constant="40" id="hgz-Cz-wjb"/>
+                    </constraints>
+                    <state key="normal" title="手动"/>
+                    <connections>
+                        <action selector="shoudongBtnClick:" destination="rxG-lQ-XLL" eventType="touchUpInside" id="v0w-pc-PoU"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GTu-QZ-lAQ">
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="rxG-lQ-XLL" eventType="valueChanged" id="tNh-PV-EbY"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DNx-7f-0Fj" secondAttribute="bottom" constant="5" id="1HU-SA-BnR"/>
+                <constraint firstItem="01q-bv-sOp" firstAttribute="centerX" secondItem="rxG-lQ-XLL" secondAttribute="centerX" multiplier="1.5" id="8Ns-Ev-5tq"/>
+                <constraint firstItem="DNx-7f-0Fj" firstAttribute="leading" secondItem="rxG-lQ-XLL" secondAttribute="leading" constant="5" id="AFZ-dF-oWf"/>
+                <constraint firstItem="ekw-eR-DX2" firstAttribute="centerX" secondItem="rxG-lQ-XLL" secondAttribute="centerX" multiplier="0.5" id="Eem-jg-MDj"/>
+                <constraint firstAttribute="trailing" secondItem="GTu-QZ-lAQ" secondAttribute="trailing" constant="50" id="Iy6-Js-vcG"/>
+                <constraint firstAttribute="bottom" secondItem="ekw-eR-DX2" secondAttribute="bottom" constant="20" id="Qtr-ZI-tkr"/>
+                <constraint firstAttribute="trailing" secondItem="Bwh-HV-RNg" secondAttribute="trailing" constant="5" id="a74-o0-KIK"/>
+                <constraint firstItem="01q-bv-sOp" firstAttribute="centerY" secondItem="ekw-eR-DX2" secondAttribute="centerY" id="dOt-0N-BLI"/>
+                <constraint firstAttribute="bottom" secondItem="Bwh-HV-RNg" secondAttribute="bottom" constant="5" id="ec6-I2-d83"/>
+                <constraint firstItem="GTu-QZ-lAQ" firstAttribute="leading" secondItem="rxG-lQ-XLL" secondAttribute="leading" constant="50" id="kJz-1l-DxI"/>
+                <constraint firstItem="ekw-eR-DX2" firstAttribute="top" secondItem="GTu-QZ-lAQ" secondAttribute="bottom" constant="5" id="uTL-cr-sXt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBtn" destination="DNx-7f-0Fj" id="nhe-43-EfB"/>
+                <outlet property="doneBnt" destination="Bwh-HV-RNg" id="ui5-i7-iNa"/>
+                <outlet property="shoudongBtn" destination="01q-bv-sOp" id="tjg-42-KDq"/>
+                <outlet property="slider" destination="GTu-QZ-lAQ" id="aqR-wX-yx5"/>
+                <outlet property="zidongBtn" destination="ekw-eR-DX2" id="wLm-AT-lxi"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="-89"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG_selected.png" width="200" height="200"/>
+        <image name="CA_fanhui.png" width="110" height="110"/>
+    </resources>
+</document>
