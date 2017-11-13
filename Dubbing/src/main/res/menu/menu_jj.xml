@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_add_jj"
+        android:title="@string/add"
+        android:icon="@drawable/add"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        />
+    <item
+        android:id="@+id/menu_save_jj"
+        android:icon="@drawable/save"
+        android:title="@string/save"
+        app:showAsAction="always"
+        />
+</menu>

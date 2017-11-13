@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clip_border"
+    android:padding="0dp">
+    <com.liubowang.dubbing.JianJi.TimeRulerView
+        android:id="@+id/trv_ruler_mpv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:layout_marginTop="1px"
+        />
+    <com.liubowang.dubbing.HunYin.MusicTextView
+        android:id="@+id/mtv_music_length_mpv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/trv_ruler_mpv"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="#647CEE"
+        />
+    <FrameLayout
+        android:id="@+id/rl_vertical_mpv"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#647CEE">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/rl_preview_vertical_mpv"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="invisible">
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VideoFrameView">
+
+    </declare-styleable>
+    <declare-styleable name="VideoClipView">
+
+    </declare-styleable>
+    <declare-styleable name="TextSeekView">
+        <attr name="textColor" format="color"/>
+        <attr name="seekMax" format="integer"/>
+        <attr name="text" format="string"/>
+        <attr name="progress" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextImageButton">
+        <attr name="tib_textColor" format="color"/>
+        <attr name="tib_text" format="string"/>
+        <attr name="tib_image" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="type" format="enum">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

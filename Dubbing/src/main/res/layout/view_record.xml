@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clip_border">
+    <FrameLayout
+        android:id="@+id/rl_progress_rv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#7BFCE0"/>
+    <TextView
+        android:id="@+id/tv_text_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:text="@string/start_dubbing"/>
+    <FrameLayout
+        android:id="@+id/rl_vertical_rv"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"/>
+
+</RelativeLayout>

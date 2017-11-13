@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liubowang.dubbing">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".Base.DBApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.liubowang.dubbing.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <!-- 配置开屏广告Activity -->
+        <activity
+            android:name="com.lafonapps.common.ad.adapter.splashad.SplashAdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <!-- 配置开屏广告结束后跳转的目标Activity类名，需要写完整类名 -->
+            <meta-data
+                android:name="targetActivity"
+                android:value="com.liubowang.dubbing.Main.MainActivity" />
+            <!-- 配置开屏广告为加载成功之前展示的默认图，一般使用启动图片 -->
+            <meta-data
+                android:name="defaultImage"
+                android:resource="@drawable/bg" />
+            <!-- 配置开屏广告Activity为主Activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.MainActivity"/>
+        <activity android:name=".HunYin.HunYinActivity" />
+        <activity android:name=".JianJi.JianJiActivity" />
+        <activity android:name=".PeiYin.PeiYinActivity" />
+        <activity android:name=".XiaoYin.XiaoYinActivity" />
+        <activity android:name=".HunYin.MusicActivity" />
+        <activity android:name=".Videos.VideosActivity" />
+        <activity android:name=".Videos.VideoPlayActivity" />
+        <activity android:name=".Main.SettingsActivity"/>
+    </application>
+
+</manifest>

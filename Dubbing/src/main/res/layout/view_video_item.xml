@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="5dp"
+    android:background="#EEEEEE">
+    <ImageView
+        android:id="@+id/iv_video_image_videos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="#DDDDDD"
+        android:layout_above="@+id/tv_video_name_videos"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:id="@+id/tv_video_duration_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_video_image_videos"
+        android:layout_alignParentRight="true"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:background="#66000000"
+        android:gravity="right"
+        android:padding="3dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_video_name_videos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_video_size_videos"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ib_more_button_videos"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:maxLines="1"
+        android:ellipsize="middle"
+        android:padding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_video_size_videos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ib_more_button_videos"
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:padding="2dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_more_button_videos"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/tv_video_name_videos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:background="@color/colorClean"
+        android:src="@drawable/video_delete"/>
+
+</RelativeLayout>

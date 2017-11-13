@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.liubowang.dubbing.Main.MainActivity">
+
+
+
+
+    <ImageButton
+        android:id="@+id/ib_set_main"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/set"
+        android:background="@color/colorClean"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="8dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_v_50p_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="206dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_h_35p_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38"
+        tools:layout_editor_absoluteY="250dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.liubowang.dubbing.Main.RoundImageView
+        android:id="@+id/iv_icon_main"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintVertical_bias="0.0"
+        app:type="round"
+        app:borderRadius="15dp"
+        android:src="@drawable/main_icon" />
+
+    <com.liubowang.dubbing.Main.TextImageButton
+        android:id="@+id/tib_peiyin_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:tib_text="@string/video_dubbing"
+        app:tib_textColor="@color/colorWhite"
+        app:tib_image="@drawable/peiyin"
+        app:layout_constraintBottom_toTopOf="@+id/gl_h_85p_main"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_v_56p_main"
+        app:layout_constraintRight_toLeftOf="@+id/gl_v_88p_main"
+        app:layout_constraintTop_toTopOf="@+id/gl_h_62p_main" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_h_85p_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88"
+        tools:layout_editor_absoluteY="579dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_h_57p_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        tools:layout_editor_absoluteY="395dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_v_88p_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="362dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_v_12p_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_v_44p_main"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="181dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_v_56p_main"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="230dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_h_62p_main"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66"
+        tools:layout_editor_absoluteY="434dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.liubowang.dubbing.Main.TextImageButton
+        android:id="@+id/tib_jianji_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_v_12p_main"
+        app:layout_constraintRight_toLeftOf="@+id/gl_v_44p_main"
+        app:layout_constraintTop_toTopOf="@+id/gl_h_35p_main"
+        app:tib_image="@drawable/jianji"
+        app:tib_text="@string/video_clip"
+        app:tib_textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/gl_h_57p_main" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline8"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <com.liubowang.dubbing.Main.TextImageButton
+        android:id="@+id/tib_xiaoyin_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_h_57p_main"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_v_56p_main"
+        app:layout_constraintRight_toLeftOf="@+id/gl_v_88p_main"
+        app:layout_constraintTop_toTopOf="@+id/gl_h_35p_main"
+        app:layout_constraintVertical_bias="0.0"
+        app:tib_image="@drawable/xiaoyi"
+        app:tib_text="@string/video_silence"
+        app:tib_textColor="@color/colorWhite"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline9"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="586dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_my_files_main"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/my_video_btn_bg"
+        android:text="@string/my_videos"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"/>
+
+    <com.liubowang.dubbing.Main.TextImageButton
+        android:id="@+id/tib_hunyin_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_h_85p_main"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_v_12p_main"
+        app:layout_constraintRight_toLeftOf="@+id/gl_v_44p_main"
+        app:layout_constraintTop_toTopOf="@+id/gl_h_62p_main"
+        app:layout_constraintVertical_bias="0.0"
+        app:tib_image="@drawable/hunyin"
+        app:tib_text="@string/video_mixing"
+        app:tib_textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/ll_banner_container_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
